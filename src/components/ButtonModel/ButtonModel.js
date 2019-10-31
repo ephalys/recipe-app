@@ -1,14 +1,18 @@
 import React from 'react';
 import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';
+import * as WebBrowser from 'expo-web-browser';
 
 class ButtonModel extends React.Component {
+
+  onSeeRecipePress = () => {
+    WebBrowser.openBrowserAsync(this.props.url);
+  }
+
   render() {
     return (
-      <View>
-        <TouchableOpacity style={[styles.startButton, { backgroundColor: this.props.backgroundColor }]}>
-          <Text style={styles.textStartButton}>{this.props.text}</Text>
-        </TouchableOpacity>
-      </View>
+      <TouchableOpacity style={[styles.startButton, { backgroundColor: this.props.backgroundColor }]} onPress={this.onSeeRecipePress}>
+        <Text style={styles.textStartButton}>{this.props.text}</Text>
+      </TouchableOpacity>
     );
   };
 }

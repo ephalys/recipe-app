@@ -41,12 +41,14 @@ const styles = StyleSheet.create({
   containerIngredientsList: {
     flex: 1,
     paddingVertical: 10,
-    borderBottomColor: '#f2f2f2',
+    borderBottomColor: '#ececec',
     borderBottomWidth: 2
   },
   containerIngredientsListWithoutBorder: {
     flex: 1,
     paddingVertical: 10
   },
-  textIngredientsList: {}
+  textIngredientsList: {
+    fontWeight: '500'
+  }
 });

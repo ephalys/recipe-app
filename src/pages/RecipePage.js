@@ -11,6 +11,7 @@ class RecipePage extends React.Component {
       {
         label: 'Roasted chicken',
         image: 'https://www.edamam.com/web-img/c24/c24a86f98a8cc1f13f795bdba2dae614.jpg',
+        url: 'http://www.epicurious.com/recipes/food/views/Roast-Chicken-394676',
         yield: 4,
         dietLabels: [
           'Low-Carb'
@@ -31,7 +32,7 @@ class RecipePage extends React.Component {
     return (
       <View style={styles.container}>
         <RecipePresentation datas={this.state.ingredients} />
-        <ButtonModel text={'Start Cooking'} backgroundColor={this.props.theme.colors.primary} />
+        <ButtonModel text={'Start Cooking'} backgroundColor={this.props.theme.colors.primary} url={this.state.ingredients[0].url}/>
         <IngredientsList datas={this.state.ingredients[0].ingredientLines} />
       </View>
     );
