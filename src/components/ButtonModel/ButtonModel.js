@@ -5,7 +5,7 @@ class ButtonModel extends React.Component {
   render() {
     return (
       <View>
-        <TouchableOpacity style={[styles.startButton, { backgroundColor: this.props.backgroundColor }]}>
+        <TouchableOpacity style={[{...styles.startButton,...this.props.style}, { backgroundColor: this.props.backgroundColor }]}>
           <Text style={styles.textStartButton}>{this.props.text}</Text>
         </TouchableOpacity>
       </View>

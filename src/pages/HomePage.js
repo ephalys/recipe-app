@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, ScrollView, View, TouchableWithoutFeedback, Keyboard } from 'react-native';
 import InputHome from "../components/InputHome/InputHome";
 import ListHome from "../components/ListHome/ListHome";
+import Filters from '../components/Filters/Filters'
 
 class HomePage extends React.Component {
     render(){
@@ -15,7 +16,7 @@ class HomePage extends React.Component {
                         <ListHome/>
                     </View>
                     <View>
-                        <InputHome/>
+                        <Filters/>
                     </View>
                 </View>
             </TouchableWithoutFeedback>

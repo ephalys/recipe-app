@@ -34,6 +34,7 @@ export default ListHome;
 const styles = StyleSheet.create({
     scrollList: {
         alignItems: 'center',
+        paddingVertical: 20
     },
     titleHome: {
         fontSize: 24,

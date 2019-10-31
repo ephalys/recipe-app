@@ -26,7 +26,7 @@ export default ListItem;
 
 const styles = StyleSheet.create({
     listItem: {
-        height: '90%',
+        height: '100%',
         width: 280,
         marginLeft: 20,
         borderRadius: 20,
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
         color: '#fff',
         fontSize: 40,
         padding: 15,
-        textShadowColor: 'rgba(0, 0, 0, 0.05)',
+        textShadowColor: 'rgba(0, 0, 0, 0.10)',
         textShadowOffset: {width: -1, height: 1},
         textShadowRadius: 3,
     },
