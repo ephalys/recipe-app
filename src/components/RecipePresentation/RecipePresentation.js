@@ -57,6 +57,7 @@ const styles = StyleSheet.create({
   presentation: {
     paddingVertical: 10,
     marginHorizontal: 20,
+    marginTop: 10,
     flexDirection: 'row'
   },
   sousPresentation: {
@@ -67,7 +68,8 @@ const styles = StyleSheet.create({
     fontSize: 20
   },
   textDescriptionPresentation: {
-    fontSize: 16
+    fontSize: 16,
+    marginTop: 5
   },
 
   iconFavorites: {

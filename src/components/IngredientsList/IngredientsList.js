@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     padding: 20
   },
   ingredientsTitle: {
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: 'bold',
     marginBottom: 10
   },
