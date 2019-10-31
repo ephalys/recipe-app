@@ -1,11 +1,15 @@
 import React from 'react';
-import { View, StyleSheet, FlatList, Text, ScrollView, TouchableOpacity } from 'react-native';
+import { View, StyleSheet } from 'react-native';
+import { withTheme } from 'react-native-paper';
 import RecipePresentation from '../components/RecipePresentation/RecipePresentation';
+import ButtonModel from '../components/ButtonModel/ButtonModel';
+import IngredientsList from '../components/IngredientsList/IngredientsList';
 
 class RecipePage extends React.Component {
   state = {
     ingredients: [
       {
+        label: 'Roasted chicken',
         image: 'https://www.edamam.com/web-img/c24/c24a86f98a8cc1f13f795bdba2dae614.jpg',
         yield: 4,
         dietLabels: [
@@ -25,67 +29,19 @@ class RecipePage extends React.Component {
 
   render() {
     return (
-      <View
-        style={styles.container}
-      // horizontal={false}
-      >
+      <View style={styles.container}>
         <RecipePresentation datas={this.state.ingredients} />
-        <TouchableOpacity style={styles.startButton}>
-          <Text style={styles.textStartButton}>Start Cooking</Text>
-        </TouchableOpacity>
-        {/* <View style={styles.containerRecette}>
-          <View style={styles.containerIngredients}>
-            <FlatList
-              contentContainerStyle={styles.ingredientsList}
-              data={this.state.ingredients}
-              keyExtractor={(item, index) => index.toString()}
-              renderItem={({ item, index }) =>
-                // <IngredientsListItem name={item} onDelete={this.onDeleteButtonPress}></IngredientsListItem>
-
-                <View>
-                  <Text>{item.number} {item.text}</Text>
-                </View>
-              }
-            />
-          </View>
-          <View style={styles.containerPreparation}>
-
-          </View>
-            </View> */}
+        <ButtonModel text={'Start Cooking'} backgroundColor={this.props.theme.colors.primary} />
+        <IngredientsList datas={this.state.ingredients[0].ingredientLines} />
       </View>
     );
   };
 }
 
-export default RecipePage;
+export default withTheme(RecipePage);
 
 const styles = StyleSheet.create({
   container: {
-    // width: '100%',
-    // height: '100%',
     flex: 1
-  },
-  startButton: {
-    flex: 1.5
-  },
-  textStartButton: {
-    color: '#ffffff'
-  },
-  containerRecette: {
-    flex: 2.5,
-    flexDirection: 'row'
-  },
-  containerIngredients: {
-    flex: 2,
-  },
-  ingredientsList: {
-    flexGrow: 1,
-    alignItems: 'center',
-    paddingTop: 10
-    // justifyContent: 'center'
-  },
-  containerPreparation: {
-    flex: 3,
-    backgroundColor: '#0000ff'
   }
 });
