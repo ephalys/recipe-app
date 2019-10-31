@@ -7,7 +7,7 @@ import AlphaScrollFlatList from 'alpha-scroll-flat-list';
 import ItemFavorite from '../components/ItemFavorite/ItemFavorite';
 import { initAsync, deleteAsync } from '../redux/actions/RecipesActions';
 import { ActivityIndicator } from 'react-native-paper';
-import TitlePage from "../components/TitlePage";
+import TitlePage from "../components/TitlePage/TitlePage";
 
 class FavoritesPage extends React.Component {
 

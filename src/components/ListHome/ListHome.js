@@ -1,7 +1,7 @@
 import React from 'react';
 import { ScrollView, View, StyleSheet, Text } from 'react-native';
 import ListItem from './ListItem'
-import TitlePage from "../TitlePage";
+import TitlePage from "../TitlePage/TitlePage";
 
 class ListHome extends React.Component {
 	state = {
