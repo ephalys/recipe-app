@@ -1,33 +1,39 @@
 import React from 'react';
-import { View, StyleSheet, FlatList, Text, ScrollView } from 'react-native';
-import RecipePresentation from '../components/RecipePresentation';
+import { View, StyleSheet, FlatList, Text, ScrollView, TouchableOpacity } from 'react-native';
+import RecipePresentation from '../components/RecipePresentation/RecipePresentation';
 
 class RecipePage extends React.Component {
   state = {
     ingredients: [
       {
-        number: '26',
-        text: 'cl de lait'
-      },
-      {
-        number: '100',
-        text: 'g de sucre'
-      },
-      {
-        number: '120',
-        text: 'g de beurre'
+        image: 'https://www.edamam.com/web-img/c24/c24a86f98a8cc1f13f795bdba2dae614.jpg',
+        yield: 4,
+        dietLabels: [
+          'Low-Carb'
+        ],
+        ingredientLines: [
+          '1 tablespoon kosher salt',
+          '1 whole 4-pound chicken, giblets reserved for another use',
+          '1/4 cup (1/2 stick) unsalted butter, melted'
+        ],
+        calories: 2385,
+        totalWeight: 980,
+        totalTime: 320
       }
     ]
-  }
+  };
 
   render() {
     return (
-      <ScrollView
+      <View
         style={styles.container}
-        horizontal={false}
+      // horizontal={false}
       >
-        <RecipePresentation />
-        <View style={styles.containerRecette}>
+        <RecipePresentation datas={this.state.ingredients} />
+        <TouchableOpacity style={styles.startButton}>
+          <Text style={styles.textStartButton}>Start Cooking</Text>
+        </TouchableOpacity>
+        {/* <View style={styles.containerRecette}>
           <View style={styles.containerIngredients}>
             <FlatList
               contentContainerStyle={styles.ingredientsList}
@@ -45,8 +51,8 @@ class RecipePage extends React.Component {
           <View style={styles.containerPreparation}>
 
           </View>
-        </View>
-      </ScrollView>
+            </View> */}
+      </View>
     );
   };
 }
@@ -55,11 +61,18 @@ export default RecipePage;
 
 const styles = StyleSheet.create({
   container: {
-    width: '100%',
-    height: '100%'
+    // width: '100%',
+    // height: '100%',
+    flex: 1
+  },
+  startButton: {
+    flex: 1.5
+  },
+  textStartButton: {
+    color: '#ffffff'
   },
   containerRecette: {
-    flex: 2,
+    flex: 2.5,
     flexDirection: 'row'
   },
   containerIngredients: {
