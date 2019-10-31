@@ -33,56 +33,58 @@ import RecipePage from '../pages/RecipePage';
 // );
 
 const tabNavigator = createMaterialBottomTabNavigator(
-  {
-    Home: {
-      screen: HomePage,
-      navigationOptions: {
-        tabBarLabel: "Home",
-        tabBarIcon: ({ tintColor }) => (
-          <Icon color={tintColor} size={25} name={'ios-list'} />
-        )
-      }
+    {
+        Home: {
+            screen: HomePage,
+            navigationOptions: {
+                tabBarLabel: "Home",
+                tabBarIcon: ({ tintColor }) => (
+                    <Icon color={tintColor} size={25} name={'ios-list'} />
+                )
+            }
+        },
+        Favorites: {
+            // screen: favoritesNavigator,
+            screen: FavoritesPage,
+            navigationOptions: {
+                tabBarLabel: "Favorites",
+                tabBarIcon: ({ tintColor }) => (
+                    <Icon color={tintColor} size={25} name={'ios-heart-empty'} />
+                )
+            }
+        },
+        Explore: {
+            screen: ExplorePage,
+            navigationOptions: {
+                tabBarLabel: "Explore",
+                tabBarIcon: ({ tintColor }) => (
+                    <Icon color={tintColor} size={25} name={'ios-search'} />
+                )
+            }
+        },
+        Recipe: {
+            screen: RecipePage,
+            navigationOptions: {
+                tabBarLabel: "Recette",
+                tabBarIcon: ({ tintColor }) => (
+                    <Icon color={tintColor} size={25} name={'ios-settings'} />
+                )
+            }
+        }
     },
-    Favorites: {
-      // screen: favoritesNavigator,
-      screen: FavoritesPage,
-      navigationOptions: {
-        tabBarLabel: "Favorites",
-        tabBarIcon: ({ tintColor }) => (
-          <Icon color={tintColor} size={25} name={'ios-heart-empty'} />
-        )
-      }
-    },
-    Explore: {
-      screen: ExplorePage,
-      navigationOptions: {
-        tabBarLabel: "Explore",
-        tabBarIcon: ({ tintColor }) => (
-          <Icon color={tintColor} size={25} name={'ios-search'} />
-        )
-      }
-    },
-    Recipe: {
-      screen: RecipePage,
-      navigationOptions: {
-        tabBarLabel: "Recette",
-        tabBarIcon: ({ tintColor }) => (
-          <Icon color={tintColor} size={25} name={'ios-settings'} />
-        )
-      }
+    {
+        initialRouteName: 'Home',
+        activeColor: "#009be3",
+        inactiveColor: "#000",
+        cardStyle: { backgroundColor: '#FFFFFF' },
+
+        barStyle: {
+            backgroundColor: "#fff",
+            labelStyle: {
+                textAlign: "center"
+            }
+        }
     }
-  },
-  {
-    initialRouteName: 'Home',
-    activeColor: "#009be3",
-    inactiveColor: "#000",
-    barStyle: {
-      backgroundColor: "#fff",
-      labelStyle: {
-        textAlign: "center"
-      }
-    }
-  }
 );
 
 export default tabNavigator;
