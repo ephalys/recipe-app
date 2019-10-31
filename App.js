@@ -2,6 +2,8 @@ import React from 'react';
 import { StyleSheet, SafeAreaView, View } from 'react-native';
 import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
 import AppNavigator from './src/navigation/AppNavigator';
+import { Provider } from 'react-redux';
+import { store } from './src/redux/Store';
 
 const recipeTheme = {
     ...DefaultTheme,
@@ -16,11 +18,13 @@ const recipeTheme = {
 
 export default function App() {
     return (
-        <PaperProvider theme={recipeTheme}>
-            <SafeAreaView style={styles.container}>
-                <AppNavigator/>
-            </SafeAreaView>
-        </PaperProvider>
+        <Provider store={store}>
+            <PaperProvider theme={recipeTheme}>
+                <SafeAreaView style={styles.container}>
+                    <AppNavigator />
+                </SafeAreaView>
+            </PaperProvider>
+        </Provider>
     );
 }
 

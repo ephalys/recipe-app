@@ -1,16 +1,29 @@
 import React from "react";
-import {StyleSheet, Text, View, ImageBackground, TouchableOpacity} from "react-native";
+import { StyleSheet, Text, View, ImageBackground, TouchableOpacity } from "react-native";
 import Icon from 'react-native-vector-icons/Ionicons';
+import { addAsync } from '../../redux/actions/RecipesActions';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 
 class ListItem extends React.Component {
+
+    onPressAdd(id) {
+        //this.setState({ recipeID: id })
+        this.props.actions.addFavorite(id);
+    }
+
+    /*state = {
+        recipeID: null
+    }*/
+
     render() {
         return (
             <View style={styles.listItem}>
-                <ImageBackground source={{uri: `https://www.edamam.com/web-img/c24/c24a86f98a8cc1f13f795bdba2dae614.jpg`}}
-                                 style={styles.imageContainer}
+                <ImageBackground source={{ uri: `https://www.edamam.com/web-img/c24/c24a86f98a8cc1f13f795bdba2dae614.jpg` }}
+                    style={styles.imageContainer}
                 >
                     <TouchableOpacity style={styles.iconFavorites}>
-                        <Icon color={'#fff'} size={35} name={'ios-heart'}/>
+                        <Icon color={'#fff'} size={35} name={'ios-heart'} onPress={() => this.onPressAdd('http://www.edamam.com/ontologies/edamam.owl#recipe_9b5945e03f05acbf9d69625138385408')} />
                     </TouchableOpacity>
                     <Text style={styles.titleRecipe}>
                         Toast with salmon and Poached eggs
@@ -21,8 +34,13 @@ class ListItem extends React.Component {
     }
 }
 
-export default ListItem;
+const mapActionsToProps = (payload) => ({
+    actions: {
+        addFavorite: bindActionCreators(addAsync, payload)
+    }
+});
 
+export default connect(null, mapActionsToProps)(ListItem);
 
 const styles = StyleSheet.create({
     listItem: {
@@ -55,7 +73,7 @@ const styles = StyleSheet.create({
         textShadowOffset: {width: -1, height: 1},
         textShadowRadius: 3,
     },
-    iconFavorites : {
+    iconFavorites: {
         position: 'absolute',
         top: 20,
         left: 20,
