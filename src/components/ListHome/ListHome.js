@@ -1,6 +1,7 @@
 import React from 'react';
 import { ScrollView, View, StyleSheet, Text } from 'react-native';
 import ListItem from './ListItem'
+import TitlePage from "../TitlePage";
 
 class ListHome extends React.Component {
 	state = {
@@ -15,7 +16,7 @@ class ListHome extends React.Component {
 	render() {
 		return (
 			<View style={{ flex: 1 }}>
-				<Text style={styles.titleHome}>What could you eat today ?</Text>
+				<TitlePage text={'What could you eat today ?'}/>
 				<ScrollView
 					horizontal={true}
 					showsHorizontalScrollIndicator={false}
@@ -38,10 +39,5 @@ const styles = StyleSheet.create({
 	scrollList: {
 		alignItems: 'center',
 		paddingVertical: 20
-	},
-	titleHome: {
-		fontSize: 24,
-		fontWeight: '700',
-		paddingHorizontal: 20
 	}
 });

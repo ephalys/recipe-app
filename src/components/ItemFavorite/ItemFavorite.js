@@ -22,7 +22,7 @@ class ItemFavorite extends Component {
 
     state = {
         recipes: null
-    }
+    };
 
     render() {
         return (
@@ -34,7 +34,7 @@ class ItemFavorite extends Component {
                     <View style={styles.itemContainer}>
                         <ListItem
                             title={this.state.recipes.label}
-                            leftAvatar={{ source: { uri: this.state.recipes.image } }}
+                            leftAvatar={{ height: 80, width: 80, source: { uri: this.state.recipes.image } }}
                             bottomDivider
                         />
                     </View>
@@ -46,8 +46,21 @@ class ItemFavorite extends Component {
 
 const styles = StyleSheet.create({
     itemContainer: {
-
-    }
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        flexDirection: 'row',
+        backgroundColor: '#fff',
+        height: 80,
+    },
+    standaloneRowBack: {
+        alignItems: 'center',
+        backgroundColor: '#c61413',
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'flex-end',
+        paddingHorizontal: 15,
+        color: '#fff'
+    },
 });
 
 const mapStateToProps = (stateStore) => ({
