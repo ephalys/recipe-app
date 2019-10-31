@@ -6,33 +6,44 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 class ListItem extends React.Component {
+  state = {
+    datas: []
+  }
+
   onPressAdd(id) {
     this.props.actions.addFavorite(id);
   }
 
   componentDidMount() {
+    let tab = [];
     this.props.recipeServ.getRecipesById(this.props.id)
       .then((datas) => {
-        console.log(datas);
+        this.setState({
+          datas: datas.data[0]
+        });
       })
       .catch((err) => {
         alert(err);
       });
+
+
   }
 
   render() {
     return (
-      <View style={styles.listItem}>
+      this.state.datas !== [] && (
+      <View key={this.props.id} style={styles.listItem}>
         <ImageBackground
-          source={{ uri: `https://www.edamam.com/web-img/c24/c24a86f98a8cc1f13f795bdba2dae614.jpg` }}
+          source={{ uri: this.state.datas.image }}
           style={styles.imageContainer}
         >
           <TouchableOpacity style={styles.iconFavorites}>
             <Icon color={'#fff'} size={35} name={'ios-heart'} onPress={() => this.onPressAdd(this.props.id)} />
           </TouchableOpacity>
-          <Text style={styles.titleRecipe}>Toast with salmon and Poached eggs</Text>
+          <Text style={styles.titleRecipe}>{this.state.datas.label}</Text>
         </ImageBackground>
       </View>
+      )
     )
   }
 }
