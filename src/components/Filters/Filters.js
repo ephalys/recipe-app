@@ -1,8 +1,6 @@
 import React from 'react';
 import {View, StyleSheet, ScrollView} from 'react-native';
-import { withTheme } from 'react-native-paper';
-import ButtonModel from "../ButtonModel/ButtonModel";
-import ListItem from "../ListHome/ListItem";
+import FilterButton from "./FilterButton";
 
 class Filters extends React.Component {
     render(){
@@ -14,15 +12,15 @@ class Filters extends React.Component {
                     contentContainerStyle={styles.scrollList}
                 >
                     <View style={{flexDirection: 'row'}} onStartShouldSetResponder = {() => true}>
-                        <ButtonModel text={'Breakfast'} style={{...styles.button, ...{marginLeft: 20}}} backgroundColor={this.props.theme.colors.primary} />
-                        <ButtonModel text={'Diner'} style={styles.button} backgroundColor={this.props.theme.colors.primary} />
-                        <ButtonModel text={'Low Carbs'} style={styles.button} backgroundColor={this.props.theme.colors.primary} />
-                        <ButtonModel text={'Low Fat'} style={styles.button} backgroundColor={this.props.theme.colors.primary} />
-                        <ButtonModel text={'Low Fat'} style={styles.button} backgroundColor={this.props.theme.colors.primary} />
-                        <ButtonModel text={'Low Fat'} style={styles.button} backgroundColor={this.props.theme.colors.primary} />
-                        <ButtonModel text={'Low Fat'} style={styles.button} backgroundColor={this.props.theme.colors.primary} />
-                        <ButtonModel text={'Low Fat'} style={styles.button} backgroundColor={this.props.theme.colors.primary} />
-                        <ButtonModel text={'Low Fat'} style={styles.button} backgroundColor={this.props.theme.colors.primary} />
+                        <FilterButton text={'Breakfast'} style={{marginLeft: 20}} />
+                        <FilterButton text={'Diner'}/>
+                        <FilterButton text={'Low Carbs'}/>
+                        <FilterButton text={'Low Fat'}/>
+                        <FilterButton text={'Low Fat'}/>
+                        <FilterButton text={'Low Fat'}/>
+                        <FilterButton text={'Low Fat'}/>
+                        <FilterButton text={'Low Fat'}/>
+                        <FilterButton text={'Low Fat'}/>
                     </View>
                 </ScrollView>
 
@@ -31,7 +29,7 @@ class Filters extends React.Component {
     };
 }
 
-export default withTheme(Filters);
+export default Filters;
 
 const styles = StyleSheet.create({
     filtersContainer: {
@@ -53,10 +51,5 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.12,
         shadowRadius: 10.14,
         elevation: 1,
-    },
-    button: {
-        marginHorizontal: 5,
-        borderRadius: 10,
-        paddingHorizontal: 15
     }
 });
