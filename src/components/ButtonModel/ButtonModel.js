@@ -1,7 +1,9 @@
 import React from 'react';
 import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';
+import * as WebBrowser from 'expo-web-browser';
 
 class ButtonModel extends React.Component {
+
   render() {
     return (
       <View>

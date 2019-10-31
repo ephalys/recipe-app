@@ -1,16 +1,14 @@
 import React from 'react';
-import { Text, View, StyleSheet, Image } from 'react-native';
+import { Text, View, StyleSheet, ImageBackground } from 'react-native';
 
 class RecipePresentation extends React.Component {
   render() {
     return (
       <View style={styles.containerPresentation}>
-        {/* <View style={styles.blocPresentation}>
-          <Image style={styles.imagePresentation} source={{ uri: this.props.datas[0].image }}>
-            <Text style={styles.namePresentation}></Text>
-          </Image>
-        </View> */}
-        <Image style={styles.imagePresentation} source={{ uri: this.props.datas[0].image }} />
+        <ImageBackground style={styles.imagePresentation} source={{ uri: this.props.datas[0].image }}>
+          <Text style={styles.namePresentation}>{this.props.datas[0].label}</Text>
+        </ImageBackground>
+        {/* <Image style={styles.imagePresentation} source={{ uri: this.props.datas[0].image }} /> */}
         <View style={styles.presentation}>
           <View style={styles.sousPresentation}>
             <Text style={styles.textMainPresentation}>Servings</Text>
@@ -39,13 +37,19 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   imagePresentation: {
-    flex: 9
+    flex: 9,
+    borderRadius: 20,
+    justifyContent: 'flex-end',
+    overflow: 'hidden'
   },
   namePresentation: {
-    fontSize: 20,
     fontWeight: 'bold',
-    color: '#ffffff',
-    fontStyle: 'italic'
+    color: '#fff',
+    fontSize: 40,
+    padding: 15,
+    textShadowColor: 'rgba(0, 0, 0, 0.05)',
+    textShadowOffset: { width: -1, height: 1 },
+    textShadowRadius: 3,
   },
   presentation: {
     flex: 1.5,
