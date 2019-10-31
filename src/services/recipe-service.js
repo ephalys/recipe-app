@@ -16,8 +16,9 @@ class RecipeService {
     }
 
     getRecipesById(id){
-        let url = `http%3A%2F%2Fwww.edamam.com%2Fontologies%2Fedamam.owl%23recipe_${id}`;
-        return axios.get(`${url}&r=${url}`);
+        let sous_url = `http%3A%2F%2Fwww.edamam.com%2Fontologies%2Fedamam.owl%23recipe_${id}`;
+        console.log(`${url}&r=${sous_url}`);
+        return axios.get(`${url}&r=${sous_url}`);
     }
 }
 
