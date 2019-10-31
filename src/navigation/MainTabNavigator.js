@@ -4,6 +4,8 @@ import HomePage from '../pages/HomePage';
 import ExplorePage from '../pages/ExplorePage';
 import Icon from 'react-native-vector-icons/Ionicons';
 import FavoritesPage from '../pages/FavoritesPage';
+import RecipePage from '../pages/RecipePage';
+
 // import { createStackNavigator } from 'react-navigation-stack';
 
 // const favoritesNavigator = createStackNavigator(
@@ -55,6 +57,15 @@ const tabNavigator = createMaterialBottomTabNavigator(
       screen: ExplorePage,
       navigationOptions: {
         tabBarLabel: "Explorer",
+        tabBarIcon: ({ tintColor }) => (
+          <Icon color={tintColor} size={25} name={'ios-settings'} />
+        )
+      }
+    },
+    Recipe: {
+      screen: RecipePage,
+      navigationOptions: {
+        tabBarLabel: "Recette",
         tabBarIcon: ({ tintColor }) => (
           <Icon color={tintColor} size={25} name={'ios-settings'} />
         )
