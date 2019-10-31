@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, ScrollView, StyleSheet } from 'react-native';
 import { withTheme } from 'react-native-paper';
 import RecipePresentation from '../components/RecipePresentation/RecipePresentation';
 import ButtonModel from '../components/ButtonModel/ButtonModel';
@@ -30,11 +30,11 @@ class RecipePage extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <ScrollView style={styles.container}>
         <RecipePresentation datas={this.state.ingredients} />
         <ButtonModel text={'Start Cooking'} backgroundColor={this.props.theme.colors.primary} url={this.state.ingredients[0].url}/>
         <IngredientsList datas={this.state.ingredients[0].ingredientLines} />
-      </View>
+      </ScrollView>
     );
   };
 }

@@ -1,12 +1,16 @@
 import React from 'react';
-import { Text, View, StyleSheet, ImageBackground } from 'react-native';
+import {Text, View, StyleSheet, ImageBackground, TouchableOpacity} from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 class RecipePresentation extends React.Component {
   render() {
     return (
       <View style={styles.containerPresentation}>
-        <ImageBackground style={styles.imagePresentation} source={{ uri: this.props.datas[0].image }}>
-          <Text style={styles.namePresentation}>{this.props.datas[0].label}</Text>
+        <ImageBackground style={styles.imageRecipe} source={{ uri: this.props.datas[0].image }}>
+          <TouchableOpacity style={styles.iconFavorites}>
+            <Icon color={'#fff'} size={35} name={'ios-heart'} onPress={() => this.onPressAdd('http://www.edamam.com/ontologies/edamam.owl#recipe_9b5945e03f05acbf9d69625138385408')} />
+          </TouchableOpacity>
+          <Text style={styles.titleRecipe}>{this.props.datas[0].label}</Text>
         </ImageBackground>
         {/* <Image style={styles.imagePresentation} source={{ uri: this.props.datas[0].image }} /> */}
         <View style={styles.presentation}>
@@ -28,7 +32,7 @@ export default RecipePresentation;
 
 const styles = StyleSheet.create({
   containerPresentation: {
-    flex: 2
+    flex: 1,
   },
   blocPresentation: {
     flex: 1,
@@ -36,13 +40,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  imagePresentation: {
-    flex: 9,
-    borderRadius: 20,
+  imageRecipe: {
     justifyContent: 'flex-end',
-    overflow: 'hidden'
+    height: 400
   },
-  namePresentation: {
+  titleRecipe: {
     fontWeight: 'bold',
     color: '#fff',
     fontSize: 40,
@@ -50,9 +52,9 @@ const styles = StyleSheet.create({
     textShadowColor: 'rgba(0, 0, 0, 0.05)',
     textShadowOffset: { width: -1, height: 1 },
     textShadowRadius: 3,
+    maxWidth: '70%'
   },
   presentation: {
-    flex: 1.5,
     paddingVertical: 10,
     marginHorizontal: 20,
     flexDirection: 'row'
@@ -66,5 +68,11 @@ const styles = StyleSheet.create({
   },
   textDescriptionPresentation: {
     fontSize: 16
+  },
+
+  iconFavorites: {
+    position: 'absolute',
+    top: 20,
+    left: 20,
   }
 });
