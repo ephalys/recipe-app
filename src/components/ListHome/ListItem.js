@@ -8,13 +8,8 @@ import { bindActionCreators } from 'redux';
 class ListItem extends React.Component {
 
     onPressAdd(id) {
-        //this.setState({ recipeID: id })
         this.props.actions.addFavorite(id);
     }
-
-    /*state = {
-        recipeID: null
-    }*/
 
     render() {
         return (
@@ -23,7 +18,7 @@ class ListItem extends React.Component {
                     style={styles.imageContainer}
                 >
                     <TouchableOpacity style={styles.iconFavorites}>
-                        <Icon color={'#fff'} size={35} name={'ios-heart'} onPress={() => this.onPressAdd('http://www.edamam.com/ontologies/edamam.owl#recipe_9b5945e03f05acbf9d69625138385408')} />
+                        <Icon color={'#fff'} size={35} name={'ios-heart'} onPress={() => this.onPressAdd('9b5945e03f05acbf9d69625138385408')} />
                     </TouchableOpacity>
                     <Text style={styles.titleRecipe}>
                         Toast with salmon and Poached eggs

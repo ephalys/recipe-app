@@ -6,11 +6,9 @@ export const RECIPES_DELETE = 'RECIPES_DELETE';
 
 export const initAsync = () => {
     return dispatch => {
-        //AsyncStorage.setItem('recipes', JSON.stringify([{label: 'test'}])).then(() => {
         AsyncStorage.getItem('recipes').then(data => {
             return dispatch({ type: RECIPES_INIT, payload: JSON.parse(data) });
         });
-        //});
     };
 }
 
