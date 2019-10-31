@@ -7,12 +7,13 @@ import AlphaScrollFlatList from 'alpha-scroll-flat-list';
 import ItemFavorite from '../components/ItemFavorite/ItemFavorite';
 import { initAsync, deleteAsync } from '../redux/actions/RecipesActions';
 import { ActivityIndicator } from 'react-native-paper';
+import TitlePage from "../components/TitlePage";
 
 class FavoritesPage extends React.Component {
 
   state = {
     refreshing: false
-  }
+  };
 
   refresh() {
     this.setState({ refreshing: true });
@@ -28,6 +29,8 @@ class FavoritesPage extends React.Component {
     return (
       <View style={styles.container}>
         <NavigationEvents onDidFocus={() => this.refresh()} />
+        <TitlePage text={'Favorites'}/>
+
         {this.props.recipes && this.props.recipes.length > 0 ? (
           <AlphaScrollFlatList
             data={this.props.recipes}
@@ -48,7 +51,7 @@ class FavoritesPage extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-
+    marginTop: 20
   }
 });
 
@@ -56,7 +59,7 @@ const mapStateToProps = (stateStore) => {
   return ({
     recipes: stateStore.recipesReducer.recipes
   });
-}
+};
 
 const mapActionsToProps = (payload) => ({
   actions: {

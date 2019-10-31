@@ -22,7 +22,7 @@ class ItemFavorite extends Component {
 
     state = {
         recipes: null
-    }
+    };
 
     render() {
         return (
@@ -34,8 +34,9 @@ class ItemFavorite extends Component {
                     <View style={styles.itemContainer}>
                         <ListItem
                             title={this.state.recipes.label}
-                            leftAvatar={{ source: { uri: this.state.recipes.image } }}
+                            leftAvatar={{ height: 80, width: 80, source: { uri: this.state.recipes.image } }}
                             bottomDivider
+                            title={'Oui'}
                         />
                     </View>
                 </SwipeRow>
