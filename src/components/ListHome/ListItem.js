@@ -10,6 +10,16 @@ class ListItem extends React.Component {
     this.props.actions.addFavorite(id);
   }
 
+  componentDidMount() {
+    this.props.recipeServ.getRecipesById(this.props.id)
+      .then((datas) => {
+        console.log(datas);
+      })
+      .catch((err) => {
+        alert(err);
+      });
+  }
+
   render() {
     return (
       <View style={styles.listItem}>
@@ -27,13 +37,17 @@ class ListItem extends React.Component {
   }
 }
 
+const mapStateToProps = (stateStore) => ({
+  recipeServ: stateStore.serviceReducer.recipeService
+});
+
 const mapActionsToProps = (payload) => ({
   actions: {
     addFavorite: bindActionCreators(addAsync, payload)
   }
 });
 
-export default connect(null, mapActionsToProps)(ListItem);
+export default connect(mapStateToProps, mapActionsToProps)(ListItem);
 
 const styles = StyleSheet.create({
   listItem: {
