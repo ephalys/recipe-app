@@ -36,7 +36,6 @@ class ItemFavorite extends Component {
                             title={this.state.recipes.label}
                             leftAvatar={{ height: 80, width: 80, source: { uri: this.state.recipes.image } }}
                             bottomDivider
-                            title={'Oui'}
                         />
                     </View>
                 </SwipeRow>
@@ -47,8 +46,21 @@ class ItemFavorite extends Component {
 
 const styles = StyleSheet.create({
     itemContainer: {
-
-    }
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        flexDirection: 'row',
+        backgroundColor: '#fff',
+        height: 80,
+    },
+    standaloneRowBack: {
+        alignItems: 'center',
+        backgroundColor: '#c61413',
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'flex-end',
+        paddingHorizontal: 15,
+        color: '#fff'
+    },
 });
 
 const mapStateToProps = (stateStore) => ({
