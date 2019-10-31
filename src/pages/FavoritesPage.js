@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, StyleSheet, AsyncStorage } from 'react-native';
+import { Text, View, StyleSheet, AsyncStorage, FlatList } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { NavigationEvents } from 'react-navigation';
@@ -15,7 +15,6 @@ class FavoritesPage extends React.Component {
   }
 
   refresh() {
-    //AsyncStorage.removeItem('recipes');
     this.setState({ refreshing: true });
     this.props.actions.initFavorites();
     this.setState({ refreshing: false });
@@ -26,21 +25,17 @@ class FavoritesPage extends React.Component {
   }
 
   render() {
-    //console.log(this.props.recipes);
-
     return (
       <View style={styles.container}>
         <NavigationEvents onDidFocus={() => this.refresh()} />
-        {this.props.recipes && this.props.recipes.length ? (
+        {this.props.recipes && this.props.recipes.length > 0 ? (
           <AlphaScrollFlatList
             data={this.props.recipes}
             renderItem={(element) => {
               return (
-                <ItemFavorite itemID={element.item} onDelete={(itemID) => this.deleteFavorite(itemID)} />
+                <ItemFavorite key={element.item} itemID={element.item} onDelete={(itemID) => this.deleteFavorite(itemID)} />
               );
             }}
-            scrollKey={'name'}
-            reverse={false}
           />
         ) : (
             <ActivityIndicator />

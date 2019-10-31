@@ -4,7 +4,7 @@ import { ActivityIndicator } from 'react-native-paper';
 import { SwipeRow } from 'react-native-swipe-list-view';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, Button } from 'react-native';
 
 class ItemFavorite extends Component {
 
@@ -15,7 +15,8 @@ class ItemFavorite extends Component {
 
     componentDidMount() {
         this.props.recipeServ.getRecipes(this.props.itemID).then((resp) => {
-            this.setState({ recipes: resp });
+            console.log('data', resp.data);
+            this.setState({ recipes: resp.data });
         });
     }
 
@@ -24,19 +25,20 @@ class ItemFavorite extends Component {
     }
 
     render() {
-        console.log(this.props);
-        //console.log(this.state.recipes);
         return (
             this.state.recipes !== null ? (
-            <SwipeRow leftOpenValue={0} rightOpenValue={-75} key={this.props.itemID}>
-                <View style={styles.itemContainer}>
+                <SwipeRow leftOpenValue={0} rightOpenValue={-75} key={this.props.key}>
+                    <View style={styles.standaloneRowBack}>
+                        <Button title="Suppr." onPress={() => this.props.onDelete(this.props.city)} />
+                    </View>
+                    <View style={styles.itemContainer}>
                         <ListItem
                             title={this.state.recipes.label}
-                            //leftAvatar={{ source: { uri: this.state.recipes.avatar_url } }}
+                            leftAvatar={{ source: { uri: this.state.recipes.image } }}
                             bottomDivider
                         />
-                </View>
-            </SwipeRow>
+                    </View>
+                </SwipeRow>
             ) : (<ActivityIndicator />)
         )
     }
