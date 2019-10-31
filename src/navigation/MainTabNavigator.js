@@ -35,28 +35,28 @@ const tabNavigator = createMaterialBottomTabNavigator(
     Home: {
       screen: HomePage,
       navigationOptions: {
-        tabBarLabel: "Accueil",
+        tabBarLabel: "Home",
         tabBarIcon: ({ tintColor }) => (
-          <Icon color={tintColor} size={25} name={'ios-home'} />
+          <Icon color={tintColor} size={25} name={'ios-list'} />
         )
       }
     },
-    Favoris: {
+    Favorites: {
       // screen: favoritesNavigator,
       screen: FavoritesPage,
       navigationOptions: {
-        tabBarLabel: "Favoris",
+        tabBarLabel: "Favorites",
         tabBarIcon: ({ tintColor }) => (
-          <Icon color={tintColor} size={25} name={'ios-star'} />
+          <Icon color={tintColor} size={25} name={'ios-heart-empty'} />
         )
       }
     },
     Explore: {
       screen: ExplorePage,
       navigationOptions: {
-        tabBarLabel: "Explorer",
+        tabBarLabel: "Explore",
         tabBarIcon: ({ tintColor }) => (
-          <Icon color={tintColor} size={25} name={'ios-settings'} />
+          <Icon color={tintColor} size={25} name={'ios-search'} />
         )
       }
     }
