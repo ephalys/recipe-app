@@ -4,13 +4,15 @@ import * as WebBrowser from 'expo-web-browser';
 
 class ButtonModel extends React.Component {
 
+  onSeeRecipePress = () => {
+    WebBrowser.openBrowserAsync(this.props.url);
+  };
+
   render() {
     return (
-      <View>
-        <TouchableOpacity style={[{...styles.startButton,...this.props.style}, { backgroundColor: this.props.backgroundColor }]}>
+        <TouchableOpacity style={[{ ...styles.startButton, ...this.props.style }, { backgroundColor: this.props.backgroundColor }]} onPress={this.onSeeRecipePress}>
           <Text style={styles.textStartButton}>{this.props.text}</Text>
         </TouchableOpacity>
-      </View>
     );
   };
 }

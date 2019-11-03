@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';
 import { withTheme } from 'react-native-paper';
 
-class ButtonModel extends React.Component {
+class FilterButton extends React.Component {
 
     render() {
         return (
@@ -15,7 +15,7 @@ class ButtonModel extends React.Component {
     };
 }
 
-export default withTheme(ButtonModel);
+export default withTheme(FilterButton);
 
 const styles = StyleSheet.create({
     button: {
