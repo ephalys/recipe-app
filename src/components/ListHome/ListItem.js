@@ -8,7 +8,7 @@ import { bindActionCreators } from 'redux';
 class ListItem extends React.Component {
   state = {
     datas: []
-  }
+  };
 
   onPressAdd(id) {
     this.props.actions.addFavorite(id);
