@@ -15,7 +15,6 @@ class ItemFavorite extends Component {
 
     componentDidMount() {
         this.props.recipeServ.getRecipes(this.props.itemID).then((resp) => {
-            console.log('data', resp.data);
             this.setState({ recipes: resp.data });
         });
     }
