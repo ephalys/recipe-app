@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, ScrollView, View, TouchableWithoutFeedback, Keyboard } from 'react-native';
+import { StyleSheet, View, TouchableWithoutFeedback, Keyboard } from 'react-native';
 import InputHome from "../components/InputHome/InputHome";
 import ListHome from "../components/ListHome/ListHome";
 import Filters from '../components/Filters/Filters'

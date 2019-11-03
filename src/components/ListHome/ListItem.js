@@ -32,7 +32,7 @@ class ListItem extends React.Component {
   render() {
     return (
       this.state.datas !== [] && (
-      <View key={this.props.id} style={styles.listItem}>
+      <View style={styles.listItem}>
         <ImageBackground
           source={{ uri: this.state.datas.image }}
           style={styles.imageContainer}

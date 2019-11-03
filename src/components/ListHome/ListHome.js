@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollView, View, StyleSheet, Text } from 'react-native';
+import { ScrollView, View, StyleSheet } from 'react-native';
 import ListItem from './ListItem'
 import TitlePage from "../TitlePage/TitlePage";
 
