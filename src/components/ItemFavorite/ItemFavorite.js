@@ -15,25 +15,26 @@ class ItemFavorite extends Component {
 
     componentDidMount() {
         this.props.recipeServ.getRecipes(this.props.itemID).then((resp) => {
-            this.setState({ recipes: resp.data });
+            //console.log('data', resp.data);
+            this.setState({ OneRecipe: resp.data });
         });
     }
 
     state = {
-        recipes: null
-    };
+        OneRecipe: null
+    }
 
     render() {
         return (
-            this.state.recipes !== null ? (
-                <SwipeRow leftOpenValue={0} rightOpenValue={-75} key={this.props.key}>
+            this.state.OneRecipe !== null ? (
+                <SwipeRow leftOpenValue={0} rightOpenValue={-75}>
                     <View style={styles.standaloneRowBack}>
                         <Button title="Suppr." onPress={() => this.props.onDelete(this.props.city)} />
                     </View>
                     <View style={styles.itemContainer}>
                         <ListItem
-                            title={this.state.recipes.label}
-                            leftAvatar={{ height: 80, width: 80, source: { uri: this.state.recipes.image } }}
+                            title={this.state.OneRecipe[0].label}
+                            leftAvatar={{ source: { uri: this.state.OneRecipe[0].image } }}
                             bottomDivider
                         />
                     </View>
