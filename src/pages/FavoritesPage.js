@@ -33,20 +33,21 @@ class FavoritesPage extends React.Component {
     return (
       <View style={styles.container}>
         <NavigationEvents onDidFocus={() => this.refresh()} />
-        <TitlePage text={'Favorites'}/>
-
+        <TitlePage text={'Favorites'} />
         {this.props.recipes && this.props.recipes.length > 0 ? (
           <AlphaScrollFlatList
             data={this.props.recipes}
             keyExtractor={this.keyExtractor.bind(this)}
             renderItem={(element) => {
               return (
-                <ItemFavorite /*key={element.item}*/ itemID={element.item} onDelete={(itemID) => this.deleteFavorite(itemID)} />
+                <ItemFavorite key={element.item} itemID={element.item} onDelete={(itemID) => this.deleteFavorite(itemID)} />
               );
             }}
           />
         ) : (
-            <ActivityIndicator />
+            <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+              <Text>Ajouter des favoris pour les retrouver ici</Text>
+            </View>
           )}
       </View>
 
@@ -56,7 +57,8 @@ class FavoritesPage extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 20
+    marginTop: 20,
+    flex: 1
   }
 });
 

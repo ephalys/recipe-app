@@ -1,4 +1,4 @@
-import { ListItem } from 'react-native-elements'
+import { ListItem, Icon } from 'react-native-elements'
 import React, { Component } from 'react';
 import { ActivityIndicator } from 'react-native-paper';
 import { SwipeRow } from 'react-native-swipe-list-view';
@@ -15,7 +15,6 @@ class ItemFavorite extends Component {
 
     componentDidMount() {
         this.props.recipeServ.getRecipes(this.props.itemID).then((resp) => {
-            //console.log('data', resp.data);
             this.setState({ OneRecipe: resp.data });
         });
     }
@@ -27,39 +26,43 @@ class ItemFavorite extends Component {
     render() {
         return (
             this.state.OneRecipe !== null ? (
-                <SwipeRow leftOpenValue={0} rightOpenValue={-75}>
+                <SwipeRow leftOpenValue={0} disableRightSwipe={true} rightOpenValue={-75} key={this.props.itemID}>
                     <View style={styles.standaloneRowBack}>
-                        <Button title="Suppr." onPress={() => this.props.onDelete(this.props.city)} />
+                        <Icon name="ios-trash" size={40} color="red" type='ionicon' onPress={() => this.props.onDelete(this.props.city)} />
                     </View>
                     <View style={styles.itemContainer}>
                         <ListItem
                             title={this.state.OneRecipe[0].label}
-                            leftAvatar={{ source: { uri: this.state.OneRecipe[0].image } }}
+                            leftAvatar={{ size: "large", source: { uri: this.state.OneRecipe[0].image } }}
                             bottomDivider
                         />
                     </View>
                 </SwipeRow>
-            ) : (<ActivityIndicator />)
+            ) : (
+                    <ActivityIndicator />
+                )
         )
     }
 }
 
 const styles = StyleSheet.create({
     itemContainer: {
-        justifyContent: 'space-between',
+        /*justifyContent: 'space-between',
         alignItems: 'center',
         flexDirection: 'row',
         backgroundColor: '#fff',
-        height: 80,
+        height: 80,*/
+        color: "#000",
+        marginRight: 25
     },
     standaloneRowBack: {
         alignItems: 'center',
-        backgroundColor: '#c61413',
         flex: 1,
         flexDirection: 'row',
         justifyContent: 'flex-end',
         paddingHorizontal: 15,
-        color: '#fff'
+        color: '#fff',
+        marginRight: 25
     },
 });
 
