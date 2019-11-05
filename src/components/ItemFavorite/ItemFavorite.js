@@ -4,7 +4,7 @@ import { ActivityIndicator } from 'react-native-paper';
 import { SwipeRow } from 'react-native-swipe-list-view';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { View, StyleSheet, Button } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
 class ItemFavorite extends Component {
 

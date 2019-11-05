@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, Text, View, ImageBackground, TouchableOpacity } from "react-native";
 import Icon from 'react-native-vector-icons/Ionicons';
-import { addAsync } from '../../redux/actions/RecipesActions';
+import { initAsync, addAsync } from '../../redux/actions/RecipesActions';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
@@ -25,35 +25,37 @@ class ListItem extends React.Component {
       .catch((err) => {
         alert(err);
       });
-
+    this.props.actions.initFavorites();
 
   }
 
   render() {
     return (
       this.state.datas !== [] && (
-      <View style={styles.listItem}>
-        <ImageBackground
-          source={{ uri: this.state.datas.image }}
-          style={styles.imageContainer}
-        >
-          <TouchableOpacity style={styles.iconFavorites}>
-            <Icon color={'#fff'} size={35} name={'ios-heart'} onPress={() => this.onPressAdd(this.props.id)} />
-          </TouchableOpacity>
-          <Text style={styles.titleRecipe}>{this.state.datas.label}</Text>
-        </ImageBackground>
-      </View>
+        <View style={styles.listItem}>
+          <ImageBackground
+            source={{ uri: this.state.datas.image }}
+            style={styles.imageContainer}
+          >
+            <TouchableOpacity style={styles.iconFavorites} onPress={() => this.onPressAdd(this.props.id)}>
+              <Icon color={this.props.favorites.includes(this.props.id) ? ('red') : ('#fff')} size={35} name={'ios-heart'} />
+            </TouchableOpacity>
+            <Text style={styles.titleRecipe}>{this.state.datas.label}</Text>
+          </ImageBackground>
+        </View>
       )
     )
   }
 }
 
 const mapStateToProps = (stateStore) => ({
-  recipeServ: stateStore.serviceReducer.recipeService
+  recipeServ: stateStore.serviceReducer.recipeService,
+  favorites: stateStore.recipesReducer.recipes
 });
 
 const mapActionsToProps = (payload) => ({
   actions: {
+    initFavorites: bindActionCreators(initAsync, payload),
     addFavorite: bindActionCreators(addAsync, payload)
   }
 });

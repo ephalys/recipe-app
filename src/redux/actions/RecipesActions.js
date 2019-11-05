@@ -19,7 +19,12 @@ export const addAsync = (recipeID) => {
             if (data !== null) {
                 tab = JSON.parse(data);
             }
-            tab.push(recipeID);
+            if (tab.findIndex(e => e === recipeID) > -1) {
+                tab.splice(tab.findIndex(e => e === recipeID), 1);
+            }
+            else {
+                tab.push(recipeID);
+            }
             AsyncStorage.setItem('recipes', JSON.stringify(tab))
                 .then(() => {
                     return dispatch({ type: RECIPES_INIT, payload: tab });
