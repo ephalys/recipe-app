@@ -1,8 +1,8 @@
-import Voice from 'react-native-voice';
 import React from 'react';
-import { View, FlatList, NativeModules } from 'react-native';
+import { View, FlatList, Button } from 'react-native';
 import { Icon } from 'react-native-elements';
 import Tts from 'react-native-tts';
+import Voice from 'react-native-voice';
 
 class Dictation extends React.Component {
 
@@ -19,18 +19,16 @@ class Dictation extends React.Component {
         });
     }*/
 
+    //https://medium.com/@anderanjos.ti/build-your-own-voice-assistant-with-react-native-node-js-and-watson-pt-3-mobile-app-86d7b88bb56c
+    //https://aboutreact.com/react-native-text-to-speech/
+    //Mots clés commandes: Start, Pause, Continue, Stop
+    //Essayer de faire démarrer la reconnaissance vocale (RV) en même temps que la dictation commence sans que la RV n'écoute la dictation sinon faire un bouton pour commencer l'écoute de la RV et des mots clés commandes
+
     state = {
         voices: [],
         selectedVoice: null,
+        icon: 'ios-play'
     };
-
-    componentDidMount() {
-        Tts.getInitStatus().then((this.initTts), (err) => {
-            if (err.code === 'no_engine') {
-                Tts.requestInstallEngine();
-            }
-        });
-    }
 
     initTts = async () => {
         const voices = await Tts.voices();
@@ -66,8 +64,24 @@ class Dictation extends React.Component {
     };
 
     readText = async () => {
+        /*Tts.getInitStatus().then((this.initTts), (err) => {
+            if (err.code === 'no_engine') {
+                Tts.requestInstallEngine();
+            }
+        });
         Tts.stop();
-        Tts.speak(this.props.text);
+        Tts.speak(this.props.text);*/
+        if(this.state.icon === "ios-play")
+            this.setState({ icon: "ios-pause" })
+        else
+            this.setState({ icon: "ios-play" })
+
+        try {
+            Tts.voices();
+        }
+        catch(err){
+            console.log(err);
+        }
     };
 
     renderVoiceItem = ({ item }) => {
@@ -83,7 +97,7 @@ class Dictation extends React.Component {
     render() {
         return (
             <View>
-                <Icon name="ios-mic" size={25} type='ionicon' raised onPress={() => this.readText()} />
+                <Icon name={this.state.icon} size={25} type='ionicon' raised onPress={() => this.readText()} />
                 <FlatList
                     keyExtractor={item => item.id}
                     renderItem={this.renderVoiceItem}
