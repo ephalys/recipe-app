@@ -38,7 +38,7 @@ class ListItem extends React.Component {
             style={styles.imageContainer}
           >
             <TouchableOpacity style={styles.iconFavorites} onPress={() => this.onPressAdd(this.props.id)}>
-              <Icon color={this.props.favorites.includes(this.props.id) ? ('red') : ('#fff')} size={35} name={'ios-heart'} />
+              <Icon color={this.props.favorites !== null && this.props.favorites.includes(this.props.id) ? ('red') : ('#fff')} size={35} name={'ios-heart'} />
             </TouchableOpacity>
             <Text style={styles.titleRecipe}>{this.state.datas.label}</Text>
           </ImageBackground>
