@@ -95,6 +95,6 @@ const styles = StyleSheet.create({
         position: 'absolute',
         flexDirection: 'row',
         top: 20,
-        left: 0
+        right: 20
     }
 });
