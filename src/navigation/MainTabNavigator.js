@@ -15,14 +15,19 @@ const homeNavigator = FluidNavigator(
         RecipePage: {
             screen: RecipePage
         }
-    }/* ,
+    }
+);
+
+
+const favoritesNavigator = FluidNavigator(
     {
-        initialRouteName: 'Home',
-        defaultNavigationOptions: {
-            headerTransparent: true,
-            headerTintColor: '#fff',
+        Favorites: {
+            screen: FavoritesPage
+        },
+        RecipePage: {
+            screen: RecipePage
         }
-    } */
+    }
 );
 
 const tabNavigator = createMaterialBottomTabNavigator(
@@ -36,8 +41,7 @@ const tabNavigator = createMaterialBottomTabNavigator(
             }
         },
         Favorites: {
-            // screen: favoritesNavigator,
-            screen: FavoritesPage,
+            screen: favoritesNavigator,
             navigationOptions: {
                 tabBarIcon: ({ tintColor }) => (
                     <Icon color={tintColor} size={25} name={'ios-heart-empty'} />

@@ -1,9 +1,8 @@
 import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import { Text, View, StyleSheet, FlatList } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { NavigationEvents } from 'react-navigation';
-import AlphaScrollFlatList from 'alpha-scroll-flat-list';
 import ItemFavorite from '../components/ItemFavorite/ItemFavorite';
 import { initAsync, deleteAsync } from '../redux/actions/RecipesActions';
 import { ActivityIndicator } from 'react-native-paper';
@@ -27,25 +26,26 @@ class FavoritesPage extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        <NavigationEvents onDidFocus={() => this.refresh()} />
-        <TitlePage text={'Favorites'} />
-        {this.props.recipes && this.props.recipes.length > 0 ? (
-          <AlphaScrollFlatList
-            data={this.props.recipes}
-            keyExtractor={(item) => item}
-            renderItem={(element) => {
-              return (
-                <ItemFavorite key={element.item} itemID={element.item} onDelete={(itemID) => this.deleteFavorite(itemID)} />
-              );
-            }}
-          />
-        ) : (
-            <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-              <Text>Ajouter des favoris pour les retrouver ici</Text>
-            </View>
+        <View style={styles.container}>
+          <NavigationEvents onDidFocus={() => this.refresh()} />
+          <TitlePage text={'Favorites'} />
+          {this.props.recipes && this.props.recipes.length > 0 ? (
+              <FlatList
+                  style={{marginTop: 20}}
+                  data={this.props.recipes}
+                  keyExtractor={(item) => item}
+                  renderItem={(element) => {
+                    return (
+                        <ItemFavorite key={element.item} itemID={element.item} onDelete={(itemID) => this.deleteFavorite(itemID)} />
+                    );
+                  }}
+              />
+          ) : (
+              <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+                <Text>Ajouter des favoris pour les retrouver ici</Text>
+              </View>
           )}
-      </View>
+        </View>
 
     );
   }

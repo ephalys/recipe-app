@@ -5,7 +5,6 @@ import { withNavigation } from 'react-navigation';
 import FavoriteButton from "../FavoriteButton/FavoriteButton";
 import { Transition } from "react-navigation-fluid-transitions";
 
-
 class ListItem extends React.Component {
   state = {
     datas: []
@@ -13,41 +12,41 @@ class ListItem extends React.Component {
 
   componentDidMount() {
     this.props.recipeServ.getRecipesById(this.props.recipeId)
-      .then((datas) => {
-        this.setState({
-          datas: datas.data[0]
+        .then((datas) => {
+          this.setState({
+            datas: datas.data[0]
+          });
+        })
+        .catch((err) => {
+          alert(err);
         });
-      })
-      .catch((err) => {
-        alert(err);
-      });
   }
 
   render() {
     return (
-      this.state.datas !== [] && (
-        <TouchableHighlight
-          style={styles.listItem}
-          onPress={() => {
-            this.props.navigation.navigate('RecipePage', {
-              recipeId: this.props.recipeId
-            });
-          }}>
-          <Transition shared="recipeImage">
-            <ImageBackground
-              source={{ uri: this.state.datas.image }}
-              style={styles.imageContainer}
-            >
-              <View style={styles.buttonsTop}>
-                <FavoriteButton recipeId={this.props.recipeId} />
-              </View>
-              <Text style={styles.titleRecipe}>
-                {this.state.datas.label}
-              </Text>
-            </ImageBackground>
-          </Transition>
-        </TouchableHighlight>
-      )
+        this.state.datas !== [] && (
+            <TouchableHighlight
+                style={styles.listItem}
+                onPress={() => {
+                  this.props.navigation.navigate('RecipePage', {
+                    recipeId: this.props.recipeId
+                  });
+                }}>
+              <Transition shared="recipeImage">
+                <ImageBackground
+                    source={{ uri: this.state.datas.image }}
+                    style={styles.imageContainer}
+                >
+                  <View style={styles.buttonsTop}>
+                    <FavoriteButton recipeId={this.props.recipeId} />
+                  </View>
+                  <Text style={styles.titleRecipe}>
+                    {this.state.datas.label}
+                  </Text>
+                </ImageBackground>
+              </Transition>
+            </TouchableHighlight>
+        )
     )
   }
 }
