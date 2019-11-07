@@ -4,11 +4,13 @@ import { connect } from 'react-redux';
 import { withNavigation } from 'react-navigation';
 import FavoriteButton from "../FavoriteButton/FavoriteButton";
 import { Transition } from "react-navigation-fluid-transitions";
+import LoadingView from '../LoadingView/LoadingView';
+import { ActivityIndicator } from "react-native-paper";
 
 
 class ListItem extends React.Component {
   state = {
-    datas: []
+    datas: null
   };
 
   componentDidMount() {
@@ -25,7 +27,7 @@ class ListItem extends React.Component {
 
   render() {
     return (
-      this.state.datas !== [] && (
+      this.state.datas !== null ? (
         <TouchableHighlight
           style={styles.listItem}
           onPress={() => {
@@ -34,10 +36,7 @@ class ListItem extends React.Component {
             });
           }}>
           <Transition shared="recipeImage">
-            <ImageBackground
-              source={{ uri: this.state.datas.image }}
-              style={styles.imageContainer}
-            >
+            <ImageBackground source={{ uri: this.state.datas.image }} style={styles.imageContainer}>
               <View style={styles.buttonsTop}>
                 <FavoriteButton recipeId={this.props.recipeId} />
               </View>
@@ -47,7 +46,9 @@ class ListItem extends React.Component {
             </ImageBackground>
           </Transition>
         </TouchableHighlight>
-      )
+      ) : (
+          <LoadingView />
+        )
     )
   }
 }
