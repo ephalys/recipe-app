@@ -13,7 +13,7 @@
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_chronometer.xml.flat",
-        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.1.aar\\eaebf190fa578d66c47ceb66b7844674\\res\\layout\\notification_template_part_chronometer.xml"
+        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\db7ca63e6c28c7bf078286ed67c8c27b\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -37,7 +37,7 @@
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
-        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.1.aar\\eaebf190fa578d66c47ceb66b7844674\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
+        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\db7ca63e6c28c7bf078286ed67c8c27b\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
@@ -45,7 +45,7 @@
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_template_custom_big.xml.flat",
-        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.1.aar\\eaebf190fa578d66c47ceb66b7844674\\res\\layout-v21\\notification_template_custom_big.xml"
+        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\db7ca63e6c28c7bf078286ed67c8c27b\\res\\layout-v21\\notification_template_custom_big.xml"
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
@@ -141,7 +141,7 @@
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_normal.9.png.flat",
-        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.1.aar\\eaebf190fa578d66c47ceb66b7844674\\res\\drawable-mdpi-v4\\notification_bg_normal.9.png"
+        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\db7ca63e6c28c7bf078286ed67c8c27b\\res\\drawable-mdpi-v4\\notification_bg_normal.9.png"
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -249,7 +249,7 @@
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg.xml.flat",
-        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.1.aar\\eaebf190fa578d66c47ceb66b7844674\\res\\drawable\\notification_bg.xml"
+        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\db7ca63e6c28c7bf078286ed67c8c27b\\res\\drawable\\notification_bg.xml"
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
@@ -309,7 +309,7 @@
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal.9.png.flat",
-        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.1.aar\\eaebf190fa578d66c47ceb66b7844674\\res\\drawable-hdpi-v4\\notification_bg_normal.9.png"
+        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\db7ca63e6c28c7bf078286ed67c8c27b\\res\\drawable-hdpi-v4\\notification_bg_normal.9.png"
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -381,7 +381,7 @@
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.1.aar\\eaebf190fa578d66c47ceb66b7844674\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
+        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\db7ca63e6c28c7bf078286ed67c8c27b\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_dialog_material_background.xml.flat",
@@ -421,7 +421,7 @@
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
-        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.1.aar\\eaebf190fa578d66c47ceb66b7844674\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
+        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\db7ca63e6c28c7bf078286ed67c8c27b\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
@@ -441,7 +441,7 @@
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.1.aar\\eaebf190fa578d66c47ceb66b7844674\\res\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png"
+        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\db7ca63e6c28c7bf078286ed67c8c27b\\res\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_clear_material.xml.flat",
@@ -449,7 +449,7 @@
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_icon_background.xml.flat",
-        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.1.aar\\eaebf190fa578d66c47ceb66b7844674\\res\\drawable\\notification_icon_background.xml"
+        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\db7ca63e6c28c7bf078286ed67c8c27b\\res\\drawable\\notification_icon_background.xml"
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
@@ -513,7 +513,7 @@
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_notification_action_background.xml.flat",
-        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.1.aar\\eaebf190fa578d66c47ceb66b7844674\\res\\drawable-v21\\notification_action_background.xml"
+        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\db7ca63e6c28c7bf078286ed67c8c27b\\res\\drawable-v21\\notification_action_background.xml"
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_select_dialog_material.xml.flat",
@@ -553,7 +553,7 @@
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.1.aar\\eaebf190fa578d66c47ceb66b7844674\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
+        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\db7ca63e6c28c7bf078286ed67c8c27b\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -561,7 +561,7 @@
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
-        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.1.aar\\eaebf190fa578d66c47ceb66b7844674\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
+        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\db7ca63e6c28c7bf078286ed67c8c27b\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -617,7 +617,7 @@
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_action_tombstone.xml.flat",
-        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.1.aar\\eaebf190fa578d66c47ceb66b7844674\\res\\layout-v21\\notification_action_tombstone.xml"
+        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\db7ca63e6c28c7bf078286ed67c8c27b\\res\\layout-v21\\notification_action_tombstone.xml"
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_popup_enter.xml.flat",
@@ -765,7 +765,7 @@
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
-        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.1.aar\\eaebf190fa578d66c47ceb66b7844674\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
+        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\db7ca63e6c28c7bf078286ed67c8c27b\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\anim_catalyst_fade_out.xml.flat",
@@ -825,7 +825,7 @@
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_action.xml.flat",
-        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.1.aar\\eaebf190fa578d66c47ceb66b7844674\\res\\layout-v21\\notification_action.xml"
+        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\db7ca63e6c28c7bf078286ed67c8c27b\\res\\layout-v21\\notification_action.xml"
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_disabled.xml.flat",
@@ -889,7 +889,7 @@
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg_low.xml.flat",
-        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.1.aar\\eaebf190fa578d66c47ceb66b7844674\\res\\drawable\\notification_bg_low.xml"
+        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\db7ca63e6c28c7bf078286ed67c8c27b\\res\\drawable\\notification_bg_low.xml"
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_dark_focused.xml.flat",
@@ -1029,7 +1029,7 @@
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.1.aar\\eaebf190fa578d66c47ceb66b7844674\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
+        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\db7ca63e6c28c7bf078286ed67c8c27b\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -1037,7 +1037,7 @@
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.1.aar\\eaebf190fa578d66c47ceb66b7844674\\res\\drawable-hdpi-v4\\notification_bg_low_normal.9.png"
+        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\db7ca63e6c28c7bf078286ed67c8c27b\\res\\drawable-hdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_edittext.xml.flat",
@@ -1149,7 +1149,7 @@
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
-        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.1.aar\\eaebf190fa578d66c47ceb66b7844674\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
+        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\db7ca63e6c28c7bf078286ed67c8c27b\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_fade_out.xml.flat",
@@ -1385,7 +1385,7 @@
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_tile_bg.xml.flat",
-        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.1.aar\\eaebf190fa578d66c47ceb66b7844674\\res\\drawable\\notification_tile_bg.xml"
+        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\db7ca63e6c28c7bf078286ed67c8c27b\\res\\drawable\\notification_tile_bg.xml"
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
@@ -1521,7 +1521,7 @@
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
-        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.1.aar\\eaebf190fa578d66c47ceb66b7844674\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
+        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\db7ca63e6c28c7bf078286ed67c8c27b\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_googleg_disabled_color_18.png.flat",
@@ -1629,7 +1629,7 @@
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_template_icon_group.xml.flat",
-        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.1.aar\\eaebf190fa578d66c47ceb66b7844674\\res\\layout-v21\\notification_template_icon_group.xml"
+        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\db7ca63e6c28c7bf078286ed67c8c27b\\res\\layout-v21\\notification_template_icon_group.xml"
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
@@ -1705,11 +1705,11 @@
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_time.xml.flat",
-        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.1.aar\\eaebf190fa578d66c47ceb66b7844674\\res\\layout\\notification_template_part_time.xml"
+        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\db7ca63e6c28c7bf078286ed67c8c27b\\res\\layout\\notification_template_part_time.xml"
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
-        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.1.aar\\eaebf190fa578d66c47ceb66b7844674\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
+        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\db7ca63e6c28c7bf078286ed67c8c27b\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_action_bar_item_background_material.xml.flat",
@@ -1753,7 +1753,7 @@
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.1.aar\\eaebf190fa578d66c47ceb66b7844674\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
+        "source": "C:\\Users\\Alexis\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\db7ca63e6c28c7bf078286ed67c8c27b\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
         "merged": "C:\\Alexis\\M1\\Dev Mobile\\React Native\\react-native-recipe\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",

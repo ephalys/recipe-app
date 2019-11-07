@@ -752,7 +752,6 @@ id focusCrop
 id forever
 id fps_text
 id ghost_view
-id ghost_view_holder
 id glide_custom_view_target_tag
 id group_divider
 id home
@@ -799,8 +798,9 @@ id rn_redbox_reload_button
 id rn_redbox_report_button
 id rn_redbox_report_label
 id rn_redbox_stack
+id save_image_matrix
 id save_non_transition_alpha
-id save_overlay_view
+id save_scale_type
 id screen
 id scrollIndicatorDown
 id scrollIndicatorUp
