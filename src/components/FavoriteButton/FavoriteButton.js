@@ -3,7 +3,6 @@ import {TouchableOpacity, StyleSheet} from "react-native";
 import Icon from 'react-native-vector-icons/Ionicons';
 import {bindActionCreators} from "redux";
 import {addAsync, initAsync} from "../../redux/actions/RecipesActions";
-import {withNavigation} from "react-navigation";
 import {connect} from "react-redux";
 
 class FavoriteButton extends React.Component {
@@ -12,11 +11,9 @@ class FavoriteButton extends React.Component {
         this.props.actions.addFavorite(id);
     }
 
-
     componentDidMount() {
         this.props.actions.initFavorites();
     }
-
 
     render() {
         return (

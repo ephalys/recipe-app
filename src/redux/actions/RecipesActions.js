@@ -10,7 +10,7 @@ export const initAsync = () => {
             return dispatch({ type: RECIPES_INIT, payload: JSON.parse(data) });
         });
     };
-}
+};
 
 export const addAsync = (recipeID) => {
     return dispatch => {
@@ -31,7 +31,7 @@ export const addAsync = (recipeID) => {
                 });
         });
     }
-}
+};
 
 export const deleteAsync = (recipeID) => {
     return dispatch => {

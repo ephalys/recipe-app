@@ -29,13 +29,11 @@ class ListItem extends React.Component {
   }
 
   render() {
-    console.log(this.props);
     return (
         this.state.datas !== [] && (
             <TouchableHighlight
                 style={styles.listItem}
                 onPress={() => {
-                  console.log('press')
                   this.props.navigation.navigate('RecipePage', {
                     itemId: 86,
                     otherParam: 'anything you want here',
@@ -45,10 +43,8 @@ class ListItem extends React.Component {
                   source={{ uri: this.state.datas.image }}
                   style={styles.imageContainer}
               >
-                <FavoriteButton position={'left'}/>
-                <Text
-                    style={styles.titleRecipe}
-                >
+                <FavoriteButton position={'left'} id={this.props.id}/>
+                <Text style={styles.titleRecipe}>
                   {this.state.datas.label}
                 </Text>
               </ImageBackground>

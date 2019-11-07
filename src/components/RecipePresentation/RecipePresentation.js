@@ -1,6 +1,5 @@
 import React from 'react';
 import {Text, View, StyleSheet, ImageBackground, TouchableOpacity} from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
 import FavoriteButton from "../FavoriteButton/FavoriteButton";
 
 class RecipePresentation extends React.Component {
@@ -8,7 +7,7 @@ class RecipePresentation extends React.Component {
     return (
       <View style={styles.containerPresentation}>
         <ImageBackground style={styles.imageRecipe} source={{ uri: this.props.datas[0].image }}>
-          <FavoriteButton position={'right'}/>
+          <FavoriteButton position={'right'} id={this.props.id}/>
           <Text style={styles.titleRecipe}>{this.props.datas[0].label}</Text>
         </ImageBackground>
         {/* <Image style={styles.imagePresentation} source={{ uri: this.props.datas[0].image }} /> */}
@@ -69,11 +68,5 @@ const styles = StyleSheet.create({
   textDescriptionPresentation: {
     fontSize: 16,
     marginTop: 5
-  },
-
-  iconFavorites: {
-    position: 'absolute',
-    top: 20,
-    right: 20,
   }
 });
