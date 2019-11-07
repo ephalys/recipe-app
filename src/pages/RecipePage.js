@@ -9,8 +9,8 @@ class RecipePage extends React.Component {
   state = {
     ingredients: [
       {
-        label: 'Roasted chicken',
-        image: 'https://www.edamam.com/web-img/c24/c24a86f98a8cc1f13f795bdba2dae614.jpg',
+        label: 'Chicken Vesuvio',
+        image: 'https://www.edamam.com/web-img/e42/e42f9119813e890af34c259785ae1cfb.jpg',
         url: 'http://www.epicurious.com/recipes/food/views/Roast-Chicken-394676',
         yield: 4,
         dietLabels: [
@@ -31,7 +31,7 @@ class RecipePage extends React.Component {
   render() {
     return (
       <ScrollView style={styles.container}>
-        <RecipePresentation datas={this.state.ingredients} id={this.props.recipeId}/>
+        <RecipePresentation datas={this.state.ingredients} id={this.props.recipeId} />
         <ButtonModel text={'Start Cooking'} backgroundColor={this.props.theme.colors.primary} url={this.state.ingredients[0].url} />
         <IngredientsList datas={this.state.ingredients[0].ingredientLines} />
       </ScrollView>

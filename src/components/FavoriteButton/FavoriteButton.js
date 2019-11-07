@@ -1,9 +1,9 @@
 import React from "react";
-import {TouchableOpacity, StyleSheet} from "react-native";
+import { TouchableOpacity, StyleSheet } from "react-native";
 import Icon from 'react-native-vector-icons/Ionicons';
-import {bindActionCreators} from "redux";
-import {addAsync, initAsync} from "../../redux/actions/RecipesActions";
-import {connect} from "react-redux";
+import { bindActionCreators } from "redux";
+import { addAsync, initAsync } from "../../redux/actions/RecipesActions";
+import { connect } from "react-redux";
 
 class FavoriteButton extends React.Component {
 
@@ -20,6 +20,7 @@ class FavoriteButton extends React.Component {
         return (
             <TouchableOpacity
                 onPress={() => this.onPressAdd(this.props.recipeId)}
+                style={styles.buttonContainer}
             >
                 <Icon color={this.props.favorites !== null && this.props.favorites.includes(this.props.recipeId) ? ('#86c16f') : ('#fff')} size={35} name={'ios-heart-empty'} />
             </TouchableOpacity>
@@ -40,3 +41,8 @@ const mapActionsToProps = (payload) => ({
 
 export default connect(mapStateToProps, mapActionsToProps)(FavoriteButton);
 
+const styles = StyleSheet.create({
+    buttonContainer: {
+        marginLeft: 20,
+    }
+});

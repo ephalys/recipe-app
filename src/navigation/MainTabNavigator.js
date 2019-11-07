@@ -5,26 +5,25 @@ import ExplorePage from '../pages/ExplorePage';
 import Icon from 'react-native-vector-icons/Ionicons';
 import FavoritesPage from '../pages/FavoritesPage';
 import RecipePage from '../pages/RecipePage';
-import { createStackNavigator } from 'react-navigation-stack';
+import { FluidNavigator } from 'react-navigation-fluid-transitions';
 
-const homeNavigator = createStackNavigator(
+const homeNavigator = FluidNavigator(
     {
         Home: {
-          screen: HomePage
+            screen: HomePage
         },
         RecipePage: {
             screen: RecipePage
         }
-    },
+    }/* ,
     {
         initialRouteName: 'Home',
         defaultNavigationOptions: {
             headerTransparent: true,
             headerTintColor: '#fff',
         }
-    }
+    } */
 );
-
 
 const tabNavigator = createMaterialBottomTabNavigator(
     {

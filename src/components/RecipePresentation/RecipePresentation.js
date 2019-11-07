@@ -1,21 +1,28 @@
 import React from 'react';
-import {Text, View, StyleSheet, ImageBackground, TouchableOpacity} from 'react-native';
+import { Text, View, StyleSheet, ImageBackground } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 import FavoriteButton from "../FavoriteButton/FavoriteButton";
-import {withNavigation} from "react-navigation";
+import { Transition } from 'react-navigation-fluid-transitions';
 import Dictation from "../Voice/VoiceParameters";
+import { withNavigation } from 'react-navigation';
 
 class RecipePresentation extends React.Component {
 
   render() {
     return (
       <View style={styles.containerPresentation}>
-        <ImageBackground style={styles.imageRecipe} source={{ uri: this.props.datas[0].image }}>
-          <View style={styles.buttonsTop}>
-            <FavoriteButton position={'right'} recipeId={this.props.navigation.getParam('recipeId')}/>
-            <Dictation text="Hello"/>
-          </View>
-          <Text style={styles.titleRecipe}>{this.props.datas[0].label}</Text>
-        </ImageBackground>
+        <Transition shared="recipeImage">
+          <ImageBackground style={styles.imageRecipe} source={{ uri: this.props.datas[0].image }}>
+            <View style={styles.buttonsTopLeft}>
+              <Icon size={35} name={'ios-arrow-back'} color={'white'} onPress={() => { this.props.navigation.goBack() }} />
+            </View>
+            <View style={styles.buttonsTopRight}>
+              <Dictation text="Hello" />
+              <FavoriteButton recipeId={this.props.navigation.getParam('recipeId')} />
+            </View>
+            <Text style={styles.titleRecipe}>{this.props.datas[0].label}</Text>
+          </ImageBackground>
+        </Transition>
         <View style={styles.presentation}>
           <View style={styles.sousPresentation}>
             <Text style={styles.textMainPresentation}>Servings</Text>
@@ -26,7 +33,7 @@ class RecipePresentation extends React.Component {
             <Text style={styles.textDescriptionPresentation}>{parseInt(this.props.datas[0].totalTime / 60)} hr {this.props.datas[0].totalTime % 60} min</Text>
           </View>
         </View>
-      </View>
+      </View >
     );
   };
 }
@@ -74,7 +81,17 @@ const styles = StyleSheet.create({
     fontSize: 16,
     marginTop: 5
   },
-  buttonsTop: {
+  buttonsTopLeft: {
+    position: 'absolute',
+    flexDirection: 'row',
+    top: 20,
+    left: 20,
+    textShadowColor: 'rgba(0, 0, 0, 0.05)',
+    textShadowOffset: { width: -1, height: 1 },
+    textShadowRadius: 3,
+    maxWidth: '70%'
+  },
+  buttonsTopRight: {
     position: 'absolute',
     flexDirection: 'row',
     top: 20,
