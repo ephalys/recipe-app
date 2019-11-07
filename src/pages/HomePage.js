@@ -4,7 +4,6 @@ import InputHome from "../components/InputHome/InputHome";
 import ListHome from "../components/ListHome/ListHome";
 import Filters from '../components/Filters/Filters'
 import { NavigationEvents } from 'react-navigation';
-import Icon from 'react-native-vector-icons/Ionicons';
 
 class HomePage extends React.Component {
 

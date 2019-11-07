@@ -26,7 +26,7 @@ class ItemFavorite extends Component {
     render() {
         return (
             this.state.OneRecipe !== null ? (
-                <SwipeRow leftOpenValue={0} disableRightSwipe={true} rightOpenValue={-75} key={this.props.itemID}>
+                <SwipeRow leftOpenValue={0} disableRightSwipe={true} rightOpenValue={-75}>
                     <View style={styles.standaloneRowBack}>
                         <Icon name="ios-trash" size={40} color="red" type='ionicon' onPress={() => this.props.onDelete(this.props.city)} />
                     </View>

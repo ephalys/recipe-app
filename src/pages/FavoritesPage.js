@@ -25,10 +25,6 @@ class FavoritesPage extends React.Component {
     this.props.actions.deleteFavorite(recipeName);
   }
 
-  keyExtractor(item) {
-    return item.item;
-  }
-
   render() {
     return (
       <View style={styles.container}>
@@ -37,7 +33,7 @@ class FavoritesPage extends React.Component {
         {this.props.recipes && this.props.recipes.length > 0 ? (
           <AlphaScrollFlatList
             data={this.props.recipes}
-            keyExtractor={this.keyExtractor.bind(this)}
+            keyExtractor={(item) => item}
             renderItem={(element) => {
               return (
                 <ItemFavorite key={element.item} itemID={element.item} onDelete={(itemID) => this.deleteFavorite(itemID)} />
