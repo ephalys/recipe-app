@@ -55,14 +55,6 @@ const tabNavigator = createMaterialBottomTabNavigator(
                     <Icon color={tintColor} size={25} name={'ios-search'} />
                 )
             }
-        },
-        Recipe: {
-            screen: RecipePage,
-            navigationOptions: {
-                tabBarIcon: ({ tintColor }) => (
-                    <Icon color={tintColor} size={25} name={'ios-settings'} />
-                )
-            }
         }
     },
     {
