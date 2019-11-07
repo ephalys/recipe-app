@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, FlatList, Button } from 'react-native';
+import { View, FlatList, Button, StyleSheet } from 'react-native';
 import { Icon } from 'react-native-elements';
 //import Tts from 'react-native-tts';
 //import Voice from 'react-native-voice';
@@ -72,9 +72,9 @@ class Dictation extends React.Component {
         Tts.stop();
         Tts.speak(this.props.text);*/
         if(this.state.icon === "ios-play")
-            this.setState({ icon: "ios-pause" })
+            this.setState({ icon: "ios-pause" });
         else
-            this.setState({ icon: "ios-play" })
+            this.setState({ icon: "ios-play-empty" });
 
         try {
             Tts.voices();
@@ -97,7 +97,9 @@ class Dictation extends React.Component {
     render() {
         return (
             <View>
-                <Icon name={this.state.icon} size={25} type='ionicon' raised onPress={() => this.readText()} />
+                <View style={styles.buttonContainer}>
+                    <Icon name={this.state.icon} size={35} color={'#fff'} type='ionicon' onPress={() => this.readText()} />
+                </View>
                 <FlatList
                     keyExtractor={item => item.id}
                     renderItem={this.renderVoiceItem}
@@ -110,3 +112,9 @@ class Dictation extends React.Component {
 }
 
 export default Dictation;
+
+const styles = StyleSheet.create({
+    buttonContainer: {
+        marginLeft: 20,
+    }
+});

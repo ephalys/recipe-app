@@ -8,6 +8,7 @@ import {connect} from "react-redux";
 class FavoriteButton extends React.Component {
 
     onPressAdd(id) {
+        console.log(id);
         this.props.actions.addFavorite(id);
     }
 
@@ -18,10 +19,9 @@ class FavoriteButton extends React.Component {
     render() {
         return (
             <TouchableOpacity
-                style={[styles.iconFavorites, this.props.position === 'left' ? styles.left : styles.right]}
-                onPress={() => this.onPressAdd(this.props.id)}
+                onPress={() => this.onPressAdd(this.props.recipeId)}
             >
-                <Icon color={this.props.favorites !== null && this.props.favorites.includes(this.props.id) ? ('#86c16f') : ('#fff')} size={35} name={'ios-heart-empty'} />
+                <Icon color={this.props.favorites !== null && this.props.favorites.includes(this.props.recipeId) ? ('#86c16f') : ('#fff')} size={35} name={'ios-heart-empty'} />
             </TouchableOpacity>
         )
     }
@@ -40,16 +40,3 @@ const mapActionsToProps = (payload) => ({
 
 export default connect(mapStateToProps, mapActionsToProps)(FavoriteButton);
 
-
-const styles = StyleSheet.create({
-    iconFavorites: {
-        position: 'absolute',
-        top: 20,
-    },
-    left: {
-        left: 20,
-    },
-    right: {
-        right: 20
-    }
-});

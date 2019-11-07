@@ -24,7 +24,7 @@ class ListHome extends React.Component {
 				>
 					<View style={{ flexDirection: 'row' }} onStartShouldSetResponder={() => true}>
 						{this.state.ids.map((id) =>
-							<ListItem id={id} key={id}/>
+							<ListItem recipeId={id} key={id}/>
 						)}
 					</View>
 				</ScrollView>

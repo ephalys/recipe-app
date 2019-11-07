@@ -3,7 +3,6 @@ import { View, ScrollView, StyleSheet } from 'react-native';
 import { withTheme } from 'react-native-paper';
 import RecipePresentation from '../components/RecipePresentation/RecipePresentation';
 import ButtonModel from '../components/ButtonModel/ButtonModel';
-import Dictation from '../components/Voice/VoiceParameters';
 import IngredientsList from '../components/IngredientsList/IngredientsList';
 
 class RecipePage extends React.Component {
@@ -32,11 +31,8 @@ class RecipePage extends React.Component {
   render() {
     return (
       <ScrollView style={styles.container}>
-        <RecipePresentation datas={this.state.ingredients} />
+        <RecipePresentation datas={this.state.ingredients} id={this.props.recipeId}/>
         <ButtonModel text={'Start Cooking'} backgroundColor={this.props.theme.colors.primary} url={this.state.ingredients[0].url} />
-        <View style={{ flexDirection: 'row' }}>
-          <Dictation text="Hello" />
-        </View>
         <IngredientsList datas={this.state.ingredients[0].ingredientLines} />
       </ScrollView>
     );
