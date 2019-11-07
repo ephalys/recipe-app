@@ -7,7 +7,7 @@ class FilterButton extends React.Component {
     render() {
         return (
             <View>
-                <TouchableOpacity style={[styles.button, { backgroundColor: this.props.theme.colors.primary }]}>
+                <TouchableOpacity style={[{...styles.button,...this.props.style },{ backgroundColor: this.props.theme.colors.primary }]}>
                     <Text style={styles.textButton}>{this.props.text}</Text>
                 </TouchableOpacity>
             </View>

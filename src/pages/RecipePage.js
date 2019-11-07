@@ -4,6 +4,7 @@ import { withTheme } from 'react-native-paper';
 import RecipePresentation from '../components/RecipePresentation/RecipePresentation';
 import ButtonModel from '../components/ButtonModel/ButtonModel';
 import IngredientsList from '../components/IngredientsList/IngredientsList';
+import {Transition} from "react-navigation-fluid-transitions";
 
 class RecipePage extends React.Component {
   state = {
@@ -30,11 +31,13 @@ class RecipePage extends React.Component {
 
   render() {
     return (
-      <ScrollView style={styles.container}>
-        <RecipePresentation datas={this.state.ingredients} id={this.props.recipeId} />
-        <ButtonModel text={'Start Cooking'} backgroundColor={this.props.theme.colors.primary} url={this.state.ingredients[0].url} />
-        <IngredientsList datas={this.state.ingredients[0].ingredientLines} />
-      </ScrollView>
+        <ScrollView style={styles.container}>
+          <RecipePresentation datas={this.state.ingredients} id={this.props.recipeId} />
+          <Transition appear="horizontal">
+            <ButtonModel text={'Start Cooking'} backgroundColor={this.props.theme.colors.primary} url={this.state.ingredients[0].url} />
+          </Transition>
+          <IngredientsList datas={this.state.ingredients[0].ingredientLines} />
+        </ScrollView>
     );
   };
 }
