@@ -1,0 +1,480 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:1:1-48:12
+INJECTED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:1:1-48:12
+INJECTED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:1:1-48:12
+INJECTED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:1:1-48:12
+MERGED from [:react-native-screens] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\react-native-screens\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-reanimated] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\react-native-reanimated\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-gesture-handler] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.59.10] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-react-native-0.59.10.aar\61c4a1820724fb55c033cd6555aa8f17\AndroidManifest.xml:2:1-13:12
+MERGED from [:expo-permissions] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-permissions\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\appcompat-1.0.0.aar\4fe7c9b37b5f6ed55351421b0c723930\AndroidManifest.xml:17:1-22:12
+MERGED from [:unimodules-react-native-adapter] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\@unimodules\react-native-adapter\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:expo-app-loader-provider] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-app-loader-provider\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:expo-constants] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-constants\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:expo-file-system] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-30:12
+MERGED from [:expo-font] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-font\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:expo-keep-awake] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-keep-awake\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:expo-linear-gradient] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-linear-gradient\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:expo-location] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-21:12
+MERGED from [:expo-sqlite] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-sqlite\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:expo-web-browser] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-web-browser\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-barcode-scanner-interface] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\unimodules-barcode-scanner-interface\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-camera-interface] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\unimodules-camera-interface\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-constants-interface] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\unimodules-constants-interface\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-face-detector-interface] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\unimodules-face-detector-interface\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-file-system-interface] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\unimodules-file-system-interface\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-font-interface] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\unimodules-font-interface\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-permissions-interface] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\unimodules-permissions-interface\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-task-manager-interface] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\unimodules-task-manager-interface\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-core] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\@unimodules\core\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-image-loader-interface] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\unimodules-image-loader-interface\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-sensors-interface] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\unimodules-sensors-interface\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.transition:transition:1.1.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\transition-1.1.0.aar\f30ba2def152e757643fb38bed8cea20\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\browser-1.0.0.aar\1ff5588e2670243f05123f634b950791\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-play-services-location-16.0.0.aar\02087ee4d4bbd14edc8594cbadab6e93\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-play-services-base-16.0.1.aar\834b484712a71ed1b10c891af4489c92\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-16.0.0.aar\e7e8aff31ad1f7fe66ecefbcad0b6bb4\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-play-services-tasks-16.0.1.aar\94177aa070d0533bb6c656cfa1d9e36d\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-play-services-basement-16.0.1.aar\bae02e64b95a8fdbe66ea74f4e46fa07\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\legacy-support-v4-1.0.0.aar\3e33f0481cd9d7cf89951e9ae93d3b81\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-glide-4.9.0.aar\54eb49ba69a36295f75562d3e6794f69\AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\fragment-1.0.0.aar\172a54ca7b31c4cfaaaf516137c4a4a5\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.0.0.aar\fbd15630a23f589bf32ec6b0eeae0966\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\1c3707a0d391ec570ec21d1d31c0ed1d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\66d19d06043f86ea51603c1514371e31\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.0.0.aar\849326a2b24277f58f44d9f808c18705\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\7e8b2d5389b18f2b9d4fc241067d77af\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\media-1.0.0.aar\dc8c8fb352b4453ec42a9a77ac5e1166\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\4a42155e6684e2650c55fe3a843582ad\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.0.0.aar\a511b4138820cef2ac996a4fa666996c\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\939dc4232159b8f5665c3b4a82f0d49e\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\979f965c9002f669f1adfaeb039bda6e\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\a9a539773059f8ecdbd2acc3e0d092e5\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\b840fafc84bd53a4f99c17d8516b73cf\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\dcd29c6c333884aca8682e73ad1cb6e3\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.1] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\core-1.0.1.aar\eaebf190fa578d66c47ceb66b7844674\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\bb19bfaaa23cc9831c284971a927fefc\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\59c805bf1967dc583f9b7c87e70aa3c1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\782a8a1fafff54bfe87d5f8a46808e86\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\9f91fc99abdd315d3b99ecde44f6cd99\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\9c898f0ec21a9dd575b1c86039104bd9\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.0.0.aar\e40703011797e85fdefe1f6e1dc58bcb\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\b50bfcd264468d315291b91eccc84b6d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\bcbb93857e8086958a8a6bc34f9abcde\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\71afce0deaa2188a8f75636a097a5ea8\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\34dda671a9936b28f93ba6a36999713f\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\8054acbb5ad94cdb0a95729f75ba92cf\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-gifdecoder-4.9.0.aar\52be22fb0981d3ecbe35d12a7e5990a6\AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-fresco-1.10.0.aar\5271a1e99eb458aeb6a0ba7956fe2543\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.10.0.aar\de07b148ac271f6dd37d9ad253b5a069\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-drawee-1.10.0.aar\c6ebfcd8778b138db9641773d56a8e4f\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-imagepipeline-1.10.0.aar\ec2c9d6481c1ce4219d40badef3dec97\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-imagepipeline-base-1.10.0.aar\226680c09266ee7849fb74f35906f827\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\soloader-0.6.0.aar\97cd3667a1a3da0773abfcd3f6c4c3a8\AndroidManifest.xml:2:1-13:12
+MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-library-3.2.11.aar\3bf66d4f7eb174aead97e3d7c5c74ad6\AndroidManifest.xml:2:1-30:12
+MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-fbcore-1.10.0.aar\a87e1a52b442f1511da335abb9cc4998\AndroidManifest.xml:2:1-9:12
+INJECTED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:1:1-48:12
+INJECTED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:1:1-48:12
+INJECTED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:1:1-48:12
+	package
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:2:5-25
+		INJECTED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:1:1-48:12
+		INJECTED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:1:1-48:12
+		INJECTED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:4:5-67
+MERGED from [:expo-file-system] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-67
+MERGED from [:expo-file-system] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-67
+	android:name
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:4:22-64
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:5:5-77
+	android:name
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:5:22-75
+uses-permission#android.permission.MANAGE_DOCUMENTS
+ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:8:5-75
+	android:name
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:8:22-72
+uses-permission#android.permission.READ_INTERNAL_STORAGE
+ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:9:5-80
+	android:name
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:9:22-77
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:10:5-75
+	android:name
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:10:22-72
+uses-permission#android.permission.USE_FINGERPRINT
+ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:11:5-74
+	android:name
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:11:22-71
+uses-permission#android.permission.VIBRATE
+ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:12:5-66
+	android:name
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:12:22-63
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:13:5-80
+	android:name
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:13:22-77
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:16:5-81
+MERGED from [:expo-location] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-81
+MERGED from [:expo-location] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-81
+MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-library-3.2.11.aar\3bf66d4f7eb174aead97e3d7c5c74ad6\AndroidManifest.xml:12:5-81
+MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-library-3.2.11.aar\3bf66d4f7eb174aead97e3d7c5c74ad6\AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:16:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:17:5-79
+MERGED from [:expo-location] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-79
+MERGED from [:expo-location] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-79
+MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-library-3.2.11.aar\3bf66d4f7eb174aead97e3d7c5c74ad6\AndroidManifest.xml:14:5-79
+MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-library-3.2.11.aar\3bf66d4f7eb174aead97e3d7c5c74ad6\AndroidManifest.xml:14:5-79
+	android:name
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:17:22-76
+uses-permission#android.permission.CAMERA
+ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:18:5-65
+	android:name
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:18:22-62
+uses-permission#android.permission.READ_CONTACTS
+ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:19:5-72
+	android:name
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:19:22-69
+uses-permission#android.permission.READ_CALENDAR
+ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:20:5-72
+	android:name
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:20:22-69
+uses-permission#android.permission.WRITE_CALENDAR
+ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:21:5-73
+	android:name
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:21:22-70
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:22:5-80
+MERGED from [:expo-file-system] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-80
+MERGED from [:expo-file-system] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-80
+	android:name
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:22:22-77
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:23:5-71
+	android:name
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:23:22-68
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:24:5-81
+MERGED from [:expo-file-system] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-81
+MERGED from [:expo-file-system] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-81
+	android:name
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:24:22-78
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:25:5-73
+	android:name
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:25:22-70
+application
+ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:28:5-46:19
+MERGED from [com.facebook.react:react-native:0.59.10] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-react-native-0.59.10.aar\61c4a1820724fb55c033cd6555aa8f17\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.59.10] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-react-native-0.59.10.aar\61c4a1820724fb55c033cd6555aa8f17\AndroidManifest.xml:11:5-20
+MERGED from [:expo-file-system] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:5-28:19
+MERGED from [:expo-file-system] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:5-28:19
+MERGED from [:expo-location] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-19:19
+MERGED from [:expo-location] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-19:19
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-play-services-location-16.0.0.aar\02087ee4d4bbd14edc8594cbadab6e93\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-play-services-location-16.0.0.aar\02087ee4d4bbd14edc8594cbadab6e93\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-play-services-base-16.0.1.aar\834b484712a71ed1b10c891af4489c92\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-play-services-base-16.0.1.aar\834b484712a71ed1b10c891af4489c92\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-16.0.0.aar\e7e8aff31ad1f7fe66ecefbcad0b6bb4\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-16.0.0.aar\e7e8aff31ad1f7fe66ecefbcad0b6bb4\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-play-services-tasks-16.0.1.aar\94177aa070d0533bb6c656cfa1d9e36d\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-play-services-tasks-16.0.1.aar\94177aa070d0533bb6c656cfa1d9e36d\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-play-services-basement-16.0.1.aar\bae02e64b95a8fdbe66ea74f4e46fa07\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-play-services-basement-16.0.1.aar\bae02e64b95a8fdbe66ea74f4e46fa07\AndroidManifest.xml:22:5-26:19
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-glide-4.9.0.aar\54eb49ba69a36295f75562d3e6794f69\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-glide-4.9.0.aar\54eb49ba69a36295f75562d3e6794f69\AndroidManifest.xml:10:5-20
+MERGED from [androidx.core:core:1.0.1] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\core-1.0.1.aar\eaebf190fa578d66c47ceb66b7844674\AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.1] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\core-1.0.1.aar\eaebf190fa578d66c47ceb66b7844674\AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\bb19bfaaa23cc9831c284971a927fefc\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\bb19bfaaa23cc9831c284971a927fefc\AndroidManifest.xml:22:5-23:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-gifdecoder-4.9.0.aar\52be22fb0981d3ecbe35d12a7e5990a6\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-gifdecoder-4.9.0.aar\52be22fb0981d3ecbe35d12a7e5990a6\AndroidManifest.xml:9:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\soloader-0.6.0.aar\97cd3667a1a3da0773abfcd3f6c4c3a8\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\soloader-0.6.0.aar\97cd3667a1a3da0773abfcd3f6c4c3a8\AndroidManifest.xml:11:5-20
+MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-library-3.2.11.aar\3bf66d4f7eb174aead97e3d7c5c74ad6\AndroidManifest.xml:18:5-28:19
+MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-library-3.2.11.aar\3bf66d4f7eb174aead97e3d7c5c74ad6\AndroidManifest.xml:18:5-28:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.1] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\core-1.0.1.aar\eaebf190fa578d66c47ceb66b7844674\AndroidManifest.xml:22:18-86
+	android:label
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:30:7-39
+	android:roundIcon
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:32:7-52
+	android:icon
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:31:7-41
+	android:allowBackup
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:33:7-34
+	android:theme
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:34:7-38
+	android:name
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:29:7-38
+activity#com.recipe.MainActivity
+ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:35:7-44:18
+	android:label
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:37:9-41
+	android:windowSoftInputMode
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:39:9-51
+	android:configChanges
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:38:9-79
+	android:name
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:36:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:40:9-43:25
+action#android.intent.action.MAIN
+ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:41:13-65
+	android:name
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:41:21-62
+category#android.intent.category.LAUNCHER
+ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:42:13-73
+	android:name
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:42:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:45:7-84
+	android:name
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml:45:17-81
+uses-sdk
+INJECTED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml
+MERGED from [:react-native-screens] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\react-native-screens\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-screens] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\react-native-screens\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\react-native-reanimated\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\react-native-reanimated\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.59.10] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-react-native-0.59.10.aar\61c4a1820724fb55c033cd6555aa8f17\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.59.10] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-react-native-0.59.10.aar\61c4a1820724fb55c033cd6555aa8f17\AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-permissions] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-permissions\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-permissions] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-permissions\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\appcompat-1.0.0.aar\4fe7c9b37b5f6ed55351421b0c723930\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\appcompat-1.0.0.aar\4fe7c9b37b5f6ed55351421b0c723930\AndroidManifest.xml:20:5-44
+MERGED from [:unimodules-react-native-adapter] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\@unimodules\react-native-adapter\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-react-native-adapter] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\@unimodules\react-native-adapter\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-app-loader-provider] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-app-loader-provider\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-app-loader-provider] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-app-loader-provider\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-constants] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-constants\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-constants] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-constants\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-file-system] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-10:41
+MERGED from [:expo-file-system] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-10:41
+MERGED from [:expo-font] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-font\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-font] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-font\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-keep-awake] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-keep-awake\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-keep-awake] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-keep-awake\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-linear-gradient] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-linear-gradient\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-linear-gradient] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-linear-gradient\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-location] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-location] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-sqlite] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-sqlite\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-sqlite] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-sqlite\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-web-browser] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-web-browser\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-web-browser] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-web-browser\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-barcode-scanner-interface] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\unimodules-barcode-scanner-interface\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-barcode-scanner-interface] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\unimodules-barcode-scanner-interface\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-camera-interface] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\unimodules-camera-interface\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-camera-interface] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\unimodules-camera-interface\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-constants-interface] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\unimodules-constants-interface\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-constants-interface] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\unimodules-constants-interface\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-face-detector-interface] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\unimodules-face-detector-interface\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-face-detector-interface] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\unimodules-face-detector-interface\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-file-system-interface] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\unimodules-file-system-interface\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-file-system-interface] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\unimodules-file-system-interface\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-font-interface] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\unimodules-font-interface\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-font-interface] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\unimodules-font-interface\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-permissions-interface] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\unimodules-permissions-interface\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-permissions-interface] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\unimodules-permissions-interface\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-task-manager-interface] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\unimodules-task-manager-interface\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-task-manager-interface] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\unimodules-task-manager-interface\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-core] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\@unimodules\core\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-core] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\@unimodules\core\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-image-loader-interface] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\unimodules-image-loader-interface\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-image-loader-interface] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\unimodules-image-loader-interface\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-sensors-interface] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\unimodules-sensors-interface\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-sensors-interface] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\unimodules-sensors-interface\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.transition:transition:1.1.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\transition-1.1.0.aar\f30ba2def152e757643fb38bed8cea20\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.1.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\transition-1.1.0.aar\f30ba2def152e757643fb38bed8cea20\AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\browser-1.0.0.aar\1ff5588e2670243f05123f634b950791\AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\browser-1.0.0.aar\1ff5588e2670243f05123f634b950791\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-play-services-location-16.0.0.aar\02087ee4d4bbd14edc8594cbadab6e93\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-play-services-location-16.0.0.aar\02087ee4d4bbd14edc8594cbadab6e93\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-play-services-base-16.0.1.aar\834b484712a71ed1b10c891af4489c92\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-play-services-base-16.0.1.aar\834b484712a71ed1b10c891af4489c92\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-16.0.0.aar\e7e8aff31ad1f7fe66ecefbcad0b6bb4\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-16.0.0.aar\e7e8aff31ad1f7fe66ecefbcad0b6bb4\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-play-services-tasks-16.0.1.aar\94177aa070d0533bb6c656cfa1d9e36d\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-play-services-tasks-16.0.1.aar\94177aa070d0533bb6c656cfa1d9e36d\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-play-services-basement-16.0.1.aar\bae02e64b95a8fdbe66ea74f4e46fa07\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-play-services-basement-16.0.1.aar\bae02e64b95a8fdbe66ea74f4e46fa07\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\legacy-support-v4-1.0.0.aar\3e33f0481cd9d7cf89951e9ae93d3b81\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\legacy-support-v4-1.0.0.aar\3e33f0481cd9d7cf89951e9ae93d3b81\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-glide-4.9.0.aar\54eb49ba69a36295f75562d3e6794f69\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-glide-4.9.0.aar\54eb49ba69a36295f75562d3e6794f69\AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\fragment-1.0.0.aar\172a54ca7b31c4cfaaaf516137c4a4a5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\fragment-1.0.0.aar\172a54ca7b31c4cfaaaf516137c4a4a5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.0.0.aar\fbd15630a23f589bf32ec6b0eeae0966\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.0.0.aar\fbd15630a23f589bf32ec6b0eeae0966\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\1c3707a0d391ec570ec21d1d31c0ed1d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\1c3707a0d391ec570ec21d1d31c0ed1d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\66d19d06043f86ea51603c1514371e31\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\66d19d06043f86ea51603c1514371e31\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.0.0.aar\849326a2b24277f58f44d9f808c18705\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.0.0.aar\849326a2b24277f58f44d9f808c18705\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\7e8b2d5389b18f2b9d4fc241067d77af\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\7e8b2d5389b18f2b9d4fc241067d77af\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\media-1.0.0.aar\dc8c8fb352b4453ec42a9a77ac5e1166\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\media-1.0.0.aar\dc8c8fb352b4453ec42a9a77ac5e1166\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\4a42155e6684e2650c55fe3a843582ad\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\4a42155e6684e2650c55fe3a843582ad\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.0.0.aar\a511b4138820cef2ac996a4fa666996c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.0.0.aar\a511b4138820cef2ac996a4fa666996c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\939dc4232159b8f5665c3b4a82f0d49e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\939dc4232159b8f5665c3b4a82f0d49e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\979f965c9002f669f1adfaeb039bda6e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\979f965c9002f669f1adfaeb039bda6e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\a9a539773059f8ecdbd2acc3e0d092e5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\a9a539773059f8ecdbd2acc3e0d092e5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\b840fafc84bd53a4f99c17d8516b73cf\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\b840fafc84bd53a4f99c17d8516b73cf\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\dcd29c6c333884aca8682e73ad1cb6e3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\dcd29c6c333884aca8682e73ad1cb6e3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\core-1.0.1.aar\eaebf190fa578d66c47ceb66b7844674\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\core-1.0.1.aar\eaebf190fa578d66c47ceb66b7844674\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\bb19bfaaa23cc9831c284971a927fefc\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\bb19bfaaa23cc9831c284971a927fefc\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\59c805bf1967dc583f9b7c87e70aa3c1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\59c805bf1967dc583f9b7c87e70aa3c1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\782a8a1fafff54bfe87d5f8a46808e86\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\782a8a1fafff54bfe87d5f8a46808e86\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\9f91fc99abdd315d3b99ecde44f6cd99\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\9f91fc99abdd315d3b99ecde44f6cd99\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\9c898f0ec21a9dd575b1c86039104bd9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\9c898f0ec21a9dd575b1c86039104bd9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.0.0.aar\e40703011797e85fdefe1f6e1dc58bcb\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.0.0.aar\e40703011797e85fdefe1f6e1dc58bcb\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\b50bfcd264468d315291b91eccc84b6d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\b50bfcd264468d315291b91eccc84b6d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\bcbb93857e8086958a8a6bc34f9abcde\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\bcbb93857e8086958a8a6bc34f9abcde\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\71afce0deaa2188a8f75636a097a5ea8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\71afce0deaa2188a8f75636a097a5ea8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\34dda671a9936b28f93ba6a36999713f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\34dda671a9936b28f93ba6a36999713f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\8054acbb5ad94cdb0a95729f75ba92cf\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\8054acbb5ad94cdb0a95729f75ba92cf\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-gifdecoder-4.9.0.aar\52be22fb0981d3ecbe35d12a7e5990a6\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-gifdecoder-4.9.0.aar\52be22fb0981d3ecbe35d12a7e5990a6\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-fresco-1.10.0.aar\5271a1e99eb458aeb6a0ba7956fe2543\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-fresco-1.10.0.aar\5271a1e99eb458aeb6a0ba7956fe2543\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.10.0.aar\de07b148ac271f6dd37d9ad253b5a069\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.10.0.aar\de07b148ac271f6dd37d9ad253b5a069\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-drawee-1.10.0.aar\c6ebfcd8778b138db9641773d56a8e4f\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-drawee-1.10.0.aar\c6ebfcd8778b138db9641773d56a8e4f\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-imagepipeline-1.10.0.aar\ec2c9d6481c1ce4219d40badef3dec97\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-imagepipeline-1.10.0.aar\ec2c9d6481c1ce4219d40badef3dec97\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-imagepipeline-base-1.10.0.aar\226680c09266ee7849fb74f35906f827\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-imagepipeline-base-1.10.0.aar\226680c09266ee7849fb74f35906f827\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\soloader-0.6.0.aar\97cd3667a1a3da0773abfcd3f6c4c3a8\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\soloader-0.6.0.aar\97cd3667a1a3da0773abfcd3f6c4c3a8\AndroidManifest.xml:7:5-9:41
+MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-library-3.2.11.aar\3bf66d4f7eb174aead97e3d7c5c74ad6\AndroidManifest.xml:8:5-10:41
+MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-library-3.2.11.aar\3bf66d4f7eb174aead97e3d7c5c74ad6\AndroidManifest.xml:8:5-10:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-fbcore-1.10.0.aar\a87e1a52b442f1511da335abb9cc4998\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-fbcore-1.10.0.aar\a87e1a52b442f1511da335abb9cc4998\AndroidManifest.xml:5:5-7:41
+INJECTED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\android\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.STORAGE
+ADDED from [:expo-file-system] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-66
+	android:name
+		ADDED from [:expo-file-system] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:22-63
+provider#expo.modules.filesystem.FileSystemFileProvider
+ADDED from [:expo-file-system] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:9-27:20
+	android:grantUriPermissions
+		ADDED from [:expo-file-system] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:13-47
+	android:authorities
+		ADDED from [:expo-file-system] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-74
+	android:exported
+		ADDED from [:expo-file-system] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-37
+	tools:replace
+		ADDED from [:expo-file-system] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:13-48
+	android:name
+		ADDED from [:expo-file-system] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-74
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:expo-file-system] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:13-26:70
+	android:resource
+		ADDED from [:expo-file-system] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:17-67
+	android:name
+		ADDED from [:expo-file-system] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:17-67
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from [:expo-location] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-77
+	android:name
+		ADDED from [:expo-location] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:22-74
+service#expo.modules.location.services.LocationTaskService
+ADDED from [:expo-location] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-18:40
+	android:exported
+		ADDED from [:expo-location] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-37
+	android:name
+		ADDED from [:expo-location] C:\Alexis\M1\Dev Mobile\React Native\react-native-recipe\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-78
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-play-services-base-16.0.1.aar\834b484712a71ed1b10c891af4489c92\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-play-services-base-16.0.1.aar\834b484712a71ed1b10c891af4489c92\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-play-services-base-16.0.1.aar\834b484712a71ed1b10c891af4489c92\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-play-services-base-16.0.1.aar\834b484712a71ed1b10c891af4489c92\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-play-services-basement-16.0.1.aar\bae02e64b95a8fdbe66ea74f4e46fa07\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-play-services-basement-16.0.1.aar\bae02e64b95a8fdbe66ea74f4e46fa07\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-play-services-basement-16.0.1.aar\bae02e64b95a8fdbe66ea74f4e46fa07\AndroidManifest.xml:24:13-58
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-library-3.2.11.aar\3bf66d4f7eb174aead97e3d7c5c74ad6\AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-library-3.2.11.aar\3bf66d4f7eb174aead97e3d7c5c74ad6\AndroidManifest.xml:13:22-76
+uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
+ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-library-3.2.11.aar\3bf66d4f7eb174aead97e3d7c5c74ad6\AndroidManifest.xml:15:5-98
+	android:name
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-library-3.2.11.aar\3bf66d4f7eb174aead97e3d7c5c74ad6\AndroidManifest.xml:15:22-95
+uses-permission#com.google.android.gms.permission.ACTIVITY_RECOGNITION
+ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-library-3.2.11.aar\3bf66d4f7eb174aead97e3d7c5c74ad6\AndroidManifest.xml:16:5-94
+	android:name
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-library-3.2.11.aar\3bf66d4f7eb174aead97e3d7c5c74ad6\AndroidManifest.xml:16:22-91
+service#io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService
+ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-library-3.2.11.aar\3bf66d4f7eb174aead97e3d7c5c74ad6\AndroidManifest.xml:19:9-21:40
+	android:exported
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-library-3.2.11.aar\3bf66d4f7eb174aead97e3d7c5c74ad6\AndroidManifest.xml:21:13-37
+	android:name
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-library-3.2.11.aar\3bf66d4f7eb174aead97e3d7c5c74ad6\AndroidManifest.xml:20:13-132
+service#io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService
+ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-library-3.2.11.aar\3bf66d4f7eb174aead97e3d7c5c74ad6\AndroidManifest.xml:22:9-24:40
+	android:exported
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-library-3.2.11.aar\3bf66d4f7eb174aead97e3d7c5c74ad6\AndroidManifest.xml:24:13-37
+	android:name
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-library-3.2.11.aar\3bf66d4f7eb174aead97e3d7c5c74ad6\AndroidManifest.xml:23:13-127
+service#io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService
+ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-library-3.2.11.aar\3bf66d4f7eb174aead97e3d7c5c74ad6\AndroidManifest.xml:25:9-27:40
+	android:exported
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-library-3.2.11.aar\3bf66d4f7eb174aead97e3d7c5c74ad6\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\Alexis\.gradle\caches\transforms-1\files-1.1\jetified-library-3.2.11.aar\3bf66d4f7eb174aead97e3d7c5c74ad6\AndroidManifest.xml:26:13-120
