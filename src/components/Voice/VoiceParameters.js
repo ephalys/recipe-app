@@ -1,8 +1,8 @@
 import React from 'react';
 import { View, FlatList, Button } from 'react-native';
 import { Icon } from 'react-native-elements';
-import Tts from 'react-native-tts';
-import Voice from 'react-native-voice';
+//import Tts from 'react-native-tts';
+//import Voice from 'react-native-voice';
 
 class Dictation extends React.Component {
 

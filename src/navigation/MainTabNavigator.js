@@ -5,39 +5,36 @@ import ExplorePage from '../pages/ExplorePage';
 import Icon from 'react-native-vector-icons/Ionicons';
 import FavoritesPage from '../pages/FavoritesPage';
 import RecipePage from '../pages/RecipePage';
+import { createStackNavigator } from 'react-navigation-stack';
 
-// import { createStackNavigator } from 'react-navigation-stack';
+const homeNavigator = createStackNavigator(
+    {
+        Home: {
+          screen: HomePage
+        },
+        RecipePage: {
+            screen: RecipePage
+        }
+    },
+    {
+        initialRouteName: 'Home',
+        defaultNavigationOptions: {
+            headerTransparent: true,
+            height: 20,
+            headerTintColor: '#000',
+            headerTitleStyle: {
+                fontWeight: 'bold'
+            }
+        }
+    }
+);
 
-// const favoritesNavigator = createStackNavigator(
-//   {
-//     Favorites: {
-//       screen: FavoritesPage
-//     },
-//     AddFavorites: {
-//       screen: AddFavoritesPage
-//     }
-//   },
-//   {
-//     initialRouteName: 'Favorites',
-//     defaultNavigationOptions: {
-//       headerStyle: {
-//         borderBottomWidth: 0
-//       },
-//       headerTintColor: '#ffffff',
-//       headerTransparent: true,
-//       headerTintStyle: {
-//         fontWeight: 'bold',
-//       }
-//     }
-//   }
-// );
 
 const tabNavigator = createMaterialBottomTabNavigator(
     {
         Home: {
-            screen: HomePage,
+            screen: homeNavigator,
             navigationOptions: {
-                tabBarLabel: "Home",
                 tabBarIcon: ({ tintColor }) => (
                     <Icon color={tintColor} size={25} name={'ios-list'} />
                 )
@@ -47,7 +44,6 @@ const tabNavigator = createMaterialBottomTabNavigator(
             // screen: favoritesNavigator,
             screen: FavoritesPage,
             navigationOptions: {
-                tabBarLabel: "Favorites",
                 tabBarIcon: ({ tintColor }) => (
                     <Icon color={tintColor} size={25} name={'ios-heart-empty'} />
                 )
@@ -56,7 +52,6 @@ const tabNavigator = createMaterialBottomTabNavigator(
         Explore: {
             screen: ExplorePage,
             navigationOptions: {
-                tabBarLabel: "Explore",
                 tabBarIcon: ({ tintColor }) => (
                     <Icon color={tintColor} size={25} name={'ios-search'} />
                 )
@@ -65,7 +60,6 @@ const tabNavigator = createMaterialBottomTabNavigator(
         Recipe: {
             screen: RecipePage,
             navigationOptions: {
-                tabBarLabel: "Recette",
                 tabBarIcon: ({ tintColor }) => (
                     <Icon color={tintColor} size={25} name={'ios-settings'} />
                 )

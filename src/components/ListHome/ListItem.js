@@ -1,9 +1,11 @@
 import React from "react";
-import { StyleSheet, Text, View, ImageBackground, TouchableOpacity } from "react-native";
-import Icon from 'react-native-vector-icons/Ionicons';
+import { StyleSheet, Text, ImageBackground, TouchableHighlight } from "react-native";
 import { initAsync, addAsync } from '../../redux/actions/RecipesActions';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import { withNavigation } from 'react-navigation';
+import FavoriteButton from "../FavoriteButton/FavoriteButton";
+
 
 class ListItem extends React.Component {
   state = {
@@ -15,52 +17,52 @@ class ListItem extends React.Component {
   }
 
   componentDidMount() {
-    let tab = [];
     this.props.recipeServ.getRecipesById(this.props.id)
-      .then((datas) => {
-        this.setState({
-          datas: datas.data[0]
+        .then((datas) => {
+          this.setState({
+            datas: datas.data[0]
+          });
+        })
+        .catch((err) => {
+          alert(err);
         });
-      })
-      .catch((err) => {
-        alert(err);
-      });
-    this.props.actions.initFavorites();
-
   }
 
   render() {
+    console.log(this.props);
     return (
-      this.state.datas !== [] && (
-        <View style={styles.listItem}>
-          <ImageBackground
-            source={{ uri: this.state.datas.image }}
-            style={styles.imageContainer}
-          >
-            <TouchableOpacity style={styles.iconFavorites} onPress={() => this.onPressAdd(this.props.id)}>
-              <Icon color={this.props.favorites !== null && this.props.favorites.includes(this.props.id) ? ('red') : ('#fff')} size={35} name={'ios-heart'} />
-            </TouchableOpacity>
-            <Text style={styles.titleRecipe}>{this.state.datas.label}</Text>
-          </ImageBackground>
-        </View>
-      )
+        this.state.datas !== [] && (
+            <TouchableHighlight
+                style={styles.listItem}
+                onPress={() => {
+                  console.log('press')
+                  this.props.navigation.navigate('RecipePage', {
+                    itemId: 86,
+                    otherParam: 'anything you want here',
+                  });
+                }}>
+              <ImageBackground
+                  source={{ uri: this.state.datas.image }}
+                  style={styles.imageContainer}
+              >
+                <FavoriteButton position={'left'}/>
+                <Text
+                    style={styles.titleRecipe}
+                >
+                  {this.state.datas.label}
+                </Text>
+              </ImageBackground>
+            </TouchableHighlight>
+        )
     )
   }
 }
 
 const mapStateToProps = (stateStore) => ({
   recipeServ: stateStore.serviceReducer.recipeService,
-  favorites: stateStore.recipesReducer.recipes
 });
 
-const mapActionsToProps = (payload) => ({
-  actions: {
-    initFavorites: bindActionCreators(initAsync, payload),
-    addFavorite: bindActionCreators(addAsync, payload)
-  }
-});
-
-export default connect(mapStateToProps, mapActionsToProps)(ListItem);
+export default withNavigation(connect(mapStateToProps)(ListItem));
 
 const styles = StyleSheet.create({
   listItem: {
@@ -92,10 +94,5 @@ const styles = StyleSheet.create({
     textShadowColor: 'rgba(0, 0, 0, 0.10)',
     textShadowOffset: { width: -1, height: 1 },
     textShadowRadius: 3,
-  },
-  iconFavorites: {
-    position: 'absolute',
-    top: 20,
-    left: 20,
   }
 });

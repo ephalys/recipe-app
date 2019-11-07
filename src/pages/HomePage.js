@@ -3,12 +3,18 @@ import { StyleSheet, View, TouchableWithoutFeedback, Keyboard } from 'react-nati
 import InputHome from "../components/InputHome/InputHome";
 import ListHome from "../components/ListHome/ListHome";
 import Filters from '../components/Filters/Filters'
+import { NavigationEvents } from 'react-navigation';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 class HomePage extends React.Component {
+
     render(){
         return(
             <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
                 <View style={styles.homeContainer}>
+                    <NavigationEvents
+                        onDidFocus={() => console.log('navEvent')}
+                    />
                     <View>
                         <InputHome/>
                     </View>

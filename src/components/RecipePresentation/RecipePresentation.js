@@ -1,15 +1,14 @@
 import React from 'react';
 import {Text, View, StyleSheet, ImageBackground, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
+import FavoriteButton from "../FavoriteButton/FavoriteButton";
 
 class RecipePresentation extends React.Component {
   render() {
     return (
       <View style={styles.containerPresentation}>
         <ImageBackground style={styles.imageRecipe} source={{ uri: this.props.datas[0].image }}>
-          <TouchableOpacity style={styles.iconFavorites}>
-            <Icon color={'#fff'} size={35} name={'ios-heart'} onPress={() => this.onPressAdd('http://www.edamam.com/ontologies/edamam.owl#recipe_9b5945e03f05acbf9d69625138385408')} />
-          </TouchableOpacity>
+          <FavoriteButton position={'right'}/>
           <Text style={styles.titleRecipe}>{this.props.datas[0].label}</Text>
         </ImageBackground>
         {/* <Image style={styles.imagePresentation} source={{ uri: this.props.datas[0].image }} /> */}
@@ -75,6 +74,6 @@ const styles = StyleSheet.create({
   iconFavorites: {
     position: 'absolute',
     top: 20,
-    left: 20,
+    right: 20,
   }
 });
