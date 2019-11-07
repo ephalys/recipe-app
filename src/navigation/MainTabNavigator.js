@@ -20,11 +20,7 @@ const homeNavigator = createStackNavigator(
         initialRouteName: 'Home',
         defaultNavigationOptions: {
             headerTransparent: true,
-            height: 20,
-            headerTintColor: '#000',
-            headerTitleStyle: {
-                fontWeight: 'bold'
-            }
+            headerTintColor: '#fff',
         }
     }
 );

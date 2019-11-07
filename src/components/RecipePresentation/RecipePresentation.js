@@ -5,6 +5,7 @@ import {withNavigation} from "react-navigation";
 import Dictation from "../Voice/VoiceParameters";
 
 class RecipePresentation extends React.Component {
+
   render() {
     return (
       <View style={styles.containerPresentation}>
