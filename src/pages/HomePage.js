@@ -3,7 +3,7 @@ import { StyleSheet, View, TouchableWithoutFeedback, Keyboard } from 'react-nati
 import InputHome from "../components/InputHome/InputHome";
 import ListHome from "../components/ListHome/ListHome";
 import Filters from '../components/Filters/Filters'
-import { NavigationEvents } from 'react-navigation';
+import TitlePage from "../components/TitlePage/TitlePage";
 
 class HomePage extends React.Component {
 
@@ -11,11 +11,11 @@ class HomePage extends React.Component {
         return (
             <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
                 <View style={styles.homeContainer}>
-                    <NavigationEvents />
                     <View>
                         <InputHome />
                     </View>
                     <View style={styles.listHomeContainer}>
+                        <TitlePage text={'What could you cook today ?'} />
                         <ListHome />
                     </View>
                     <View>

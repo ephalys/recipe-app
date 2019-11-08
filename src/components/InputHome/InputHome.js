@@ -1,7 +1,15 @@
 import React from 'react';
 import { View, TextInput, StyleSheet } from 'react-native';
+import { withNavigation } from 'react-navigation';
 
 class InputHome extends React.Component {
+
+    searchRecipe(recipeName) {
+        this.props.navigation.navigate('SearchPage', {
+            recipeName: recipeName
+        });
+    }
+
     render(){
         return(
             <View style={styles.inputContainer}>
@@ -9,14 +17,17 @@ class InputHome extends React.Component {
                     placeholder={'Search recipes...'}
                     style={styles.input}
                     underlineColorAndroid="transparent"
+                    returnKeyType={'search'}
                     onChangeText={(text) => this.setState({ cityName: text })}
+                    onSubmitEditing={(event) => this.searchRecipe( this.state.cityName
+                    )}
                 />
             </View>
         );
     };
 }
 
-export default InputHome;
+export default withNavigation(InputHome);
 
 const styles = StyleSheet.create({
     inputContainer: {
