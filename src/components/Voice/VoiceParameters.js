@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, FlatList, Button } from 'react-native';
+import { View, FlatList, Button, StyleSheet } from 'react-native';
 import { Icon } from 'react-native-elements';
 //import Tts from 'react-native-tts';
 //import Voice from 'react-native-voice';
@@ -98,7 +98,7 @@ class Dictation extends React.Component {
         return (
             <View>
                 <View>
-                    <Icon name={this.state.icon} size={35} color={'#fff'} type='ionicon' onPress={() => this.readText()} />
+                    <Icon name={this.state.icon} style={styles.iconPlay} size={35} color={'#fff'} type='ionicon' onPress={() => this.readText()} />
                 </View>
                 <FlatList
                     keyExtractor={item => item.id}
@@ -112,3 +112,16 @@ class Dictation extends React.Component {
 }
 
 export default Dictation;
+
+const styles = StyleSheet.create({
+    iconPlay: {
+        shadowColor: 'black',
+        shadowOpacity: .2,
+        shadowRadius: 3,
+        // iOS
+        shadowOffset: {
+            width: 0,            // These can't both be 0
+            height: 1,           // i.e. the shadow has to be offset in some way
+        },
+    }
+});
