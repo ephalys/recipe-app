@@ -2,7 +2,6 @@ import React from 'react';
 import { createMaterialBottomTabNavigator } from 'react-navigation-material-bottom-tabs';
 import HomePage from '../pages/HomePage';
 import SearchPage from '../pages/SearchPage';
-import ExplorePage from '../pages/ExplorePage';
 import Icon from 'react-native-vector-icons/Ionicons';
 import FavoritesPage from '../pages/FavoritesPage';
 import RecipePage from '../pages/RecipePage';
@@ -49,14 +48,6 @@ const tabNavigator = createMaterialBottomTabNavigator(
             navigationOptions: {
                 tabBarIcon: ({ tintColor }) => (
                     <Icon color={tintColor} size={25} name={'ios-heart-empty'} />
-                )
-            }
-        },
-        Explore: {
-            screen: ExplorePage,
-            navigationOptions: {
-                tabBarIcon: ({ tintColor }) => (
-                    <Icon color={tintColor} size={25} name={'ios-search'} />
                 )
             }
         }
