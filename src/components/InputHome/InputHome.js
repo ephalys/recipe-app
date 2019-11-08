@@ -18,8 +18,8 @@ class InputHome extends React.Component {
                     style={styles.input}
                     underlineColorAndroid="transparent"
                     returnKeyType={'search'}
-                    onChangeText={(text) => this.setState({ cityName: text })}
-                    onSubmitEditing={(event) => this.searchRecipe( this.state.cityName
+                    onChangeText={(text) => this.setState({ recipeName: text })}
+                    onSubmitEditing={() => this.searchRecipe(this.state.recipeName
                     )}
                 />
             </View>

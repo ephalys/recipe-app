@@ -1,11 +1,9 @@
 import React from 'react';
-import {ScrollView, View, StyleSheet, Text, TabBarIOS, TouchableWithoutFeedback} from 'react-native';
+import {ScrollView, View, StyleSheet} from 'react-native';
 import ListItem from './ListItem'
-import TitlePage from "../TitlePage/TitlePage";
 import { connect } from 'react-redux';
 import { withNavigation } from 'react-navigation';
 import LoadingView from '../../components/LoadingView/LoadingView';
-import {Transition} from "react-navigation-fluid-transitions";
 
 class ListHome extends React.Component {
 	state = {

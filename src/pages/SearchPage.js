@@ -4,7 +4,6 @@ import ListHome from "../components/ListHome/ListHome";
 import { withNavigation } from 'react-navigation';
 import TitlePage from "../components/TitlePage/TitlePage";
 import Icon from 'react-native-vector-icons/Ionicons';
-import {Transition} from "react-navigation-fluid-transitions";
 
 class SearchPage extends React.Component {
 
