@@ -15,10 +15,13 @@ class RecipeService {
         return result;
     }
 
-    getRecipesById(id){
+    getRecipesById(id) {
         let sous_url = `http%3A%2F%2Fwww.edamam.com%2Fontologies%2Fedamam.owl%23recipe_${id}`;
-        //console.log(`${url}&r=${sous_url}`);
         return axios.get(`${url}&r=${sous_url}`);
+    }
+
+    getRecipesHome() {
+        return axios.get(`https://api.edamam.com/search?q=e&app_id=ddc63e00&app_key=93c13284eb0f99b2b3488aa03b9428e9&from=0&to=10`);
     }
 }
 

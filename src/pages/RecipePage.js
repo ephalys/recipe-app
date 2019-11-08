@@ -4,40 +4,19 @@ import { withTheme } from 'react-native-paper';
 import RecipePresentation from '../components/RecipePresentation/RecipePresentation';
 import ButtonModel from '../components/ButtonModel/ButtonModel';
 import IngredientsList from '../components/IngredientsList/IngredientsList';
-import {Transition} from "react-navigation-fluid-transitions";
+import { Transition } from "react-navigation-fluid-transitions";
 
 class RecipePage extends React.Component {
-  state = {
-    ingredients: [
-      {
-        label: 'Chicken Vesuvio',
-        image: 'https://www.edamam.com/web-img/e42/e42f9119813e890af34c259785ae1cfb.jpg',
-        url: 'http://www.epicurious.com/recipes/food/views/Roast-Chicken-394676',
-        yield: 4,
-        dietLabels: [
-          'Low-Carb'
-        ],
-        ingredientLines: [
-          '1 tablespoon kosher salt',
-          '1 whole 4-pound chicken, giblets reserved for another use',
-          '1/4 cup (1/2 stick) unsalted butter, melted'
-        ],
-        calories: 2385,
-        totalWeight: 980,
-        totalTime: 320
-      }
-    ]
-  };
-
   render() {
+    console.log(this.props.navigation.state.params.item);
     return (
-        <ScrollView style={styles.container}>
-          <RecipePresentation datas={this.state.ingredients} id={this.props.recipeId} />
-          <Transition appear="horizontal">
-            <ButtonModel text={'Start Cooking'} backgroundColor={this.props.theme.colors.primary} url={this.state.ingredients[0].url} />
-          </Transition>
-          <IngredientsList datas={this.state.ingredients[0].ingredientLines} />
-        </ScrollView>
+      <ScrollView style={styles.container}>
+        <RecipePresentation item={this.props.navigation.state.params.item} />
+        <Transition appear="horizontal">
+          <ButtonModel text={'Start Cooking'} backgroundColor={this.props.theme.colors.primary} url={this.props.navigation.state.params.item.recipe.url} />
+        </Transition>
+        <IngredientsList ingredients={this.props.navigation.state.params.item.recipe.ingredientLines} />
+      </ScrollView>
     );
   };
 }
