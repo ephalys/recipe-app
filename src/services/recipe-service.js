@@ -16,9 +16,23 @@ class RecipeService {
     }
     
     getRecipesHome() {
-        var tab = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
-        let indexRandom = parseInt(Math.random() * 25);
-        return axios.get(`https://api.edamam.com/search?q=${tab[indexRandom]}&app_id=ddc63e00&app_key=93c13284eb0f99b2b3488aa03b9428e9&from=0&to=10`);
+        let hour = new Date().getHours();
+        let mealType = '';
+        switch(true){
+            case (hour < 10):
+                mealType = 'breakfast';
+                break;
+            case (hour < 14):
+                mealType = 'lunch';
+                break;
+            case (hour < 18):
+                mealType = 'snack';
+                break;
+            default:
+                mealType = 'dinner';
+                break;
+        }
+        return axios.get(`https://api.edamam.com/search?q=${mealType}&app_id=ddc63e00&app_key=93c13284eb0f99b2b3488aa03b9428e9&from=0&to=20`);
     }
 }
 
