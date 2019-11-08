@@ -16,7 +16,7 @@ class RecipePresentation extends React.Component {
                         <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
                             <Transition appear="top">
                                 <View style={styles.buttonsTopLeft}>
-                                    <Icon size={35} name={'ios-arrow-back'} style={{ paddingHorizontal: 15}} color={'white'} onPress={() => { this.props.navigation.goBack() }} />
+                                    <Icon size={35} name={'ios-arrow-back'} style={{ paddingHorizontal: 20}} color={'white'} onPress={() => { this.props.navigation.goBack() }} />
                                 </View>
                             </Transition>
                             <Transition appear="top">
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
     buttonsTopLeft: {
         flexDirection: 'row',
         top: 20,
-        left: 20,
+        left: 0,
         textShadowColor: 'rgba(0, 0, 0, 0.05)',
         textShadowOffset: { width: -1, height: 1 },
         textShadowRadius: 3,
