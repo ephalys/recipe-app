@@ -11,13 +11,13 @@ class IngredientsList extends React.Component {
                 </Transition>
                 <FlatList
                     contentContainerStyle={styles.ingredientsList}
-                    data={this.props.datas}
+                    data={this.props.ingredients}
                     keyExtractor={(item, index) => index.toString()}
                     renderItem={({ item, index }) =>
                         <Transition appear="horizontal">
                             <View
                                 style={
-                                    (index === this.props.datas.length - 1)
+                                    (index === this.props.ingredients.length - 1)
                                         ? styles.containerIngredientsListWithoutBorder
                                         : styles.containerIngredientsList
                                 }>

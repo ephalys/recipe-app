@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, Text, ImageBackground, TouchableHighlight, View } from "react-native";
 import FavoriteButton from "../FavoriteButton/FavoriteButton";
 import { Transition } from "react-navigation-fluid-transitions";
+import { withNavigation } from 'react-navigation';
 
 class ListItem extends React.Component {
     render() {
@@ -10,7 +11,7 @@ class ListItem extends React.Component {
                 style={styles.listItem}
                 onPress={() => {
                     this.props.navigation.navigate('RecipePage', {
-                        recipeId: this.props.item.recipe.uri.split('_')[1]
+                        item: this.props.item
                     });
                 }}
             >
@@ -29,7 +30,7 @@ class ListItem extends React.Component {
     }
 }
 
-export default ListItem;
+export default withNavigation(ListItem);
 
 const styles = StyleSheet.create({
     listItem: {
