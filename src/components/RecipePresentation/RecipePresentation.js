@@ -7,16 +7,15 @@ import Dictation from "../Voice/VoiceParameters";
 import { withNavigation } from 'react-navigation';
 
 class RecipePresentation extends React.Component {
-
     render() {
         return (
             <View style={styles.containerPresentation}>
                 <Transition shared={this.props.item.id}>
                     <ImageBackground style={styles.imageRecipe} source={{ uri: this.props.item.image }}>
-                        <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+                        <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
                             <Transition appear="top">
                                 <View style={styles.buttonsTopLeft}>
-                                    <Icon size={35} name={'ios-arrow-back'} style={{ paddingHorizontal: 20}} color={'white'} onPress={() => { this.props.navigation.goBack() }} />
+                                    <Icon size={35} name={'ios-arrow-back'} style={{ paddingHorizontal: 20 }} color={'white'} onPress={() => { this.props.navigation.goBack() }} />
                                 </View>
                             </Transition>
                             <Transition appear="top">
@@ -43,9 +42,18 @@ class RecipePresentation extends React.Component {
                         <Transition appear="horizontal">
                             <Text style={styles.textMainPresentation}>Cooking Time</Text>
                         </Transition>
-
                         <Transition appear="horizontal">
-                            <Text style={styles.textDescriptionPresentation}>{this.props.item.totalTime >= 60 && (`${parseInt(this.props.item.totalTime / 60)} hr `)}{this.props.item.totalTime % 60} min</Text>
+                            <Text style={styles.textDescriptionPresentation}>
+                                {this.props.item.totalTime == 0 && (
+                                    'NA'
+                                )}
+                                {this.props.item.totalTime >= 60 && (
+                                    `${parseInt(this.props.item.totalTime / 60)} hr `
+                                )}
+                                {this.props.item.totalTime > 0 && (
+                                    `${this.props.item.totalTime % 60} min`
+                                )}
+                            </Text>
                         </Transition>
                     </View>
                 </View>
