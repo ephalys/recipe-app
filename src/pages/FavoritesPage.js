@@ -21,8 +21,8 @@ class FavoritesPage extends React.Component {
         this.setState({ refreshing: false });
     }
 
-    deleteFavorite(recipeName) {
-        this.props.actions.deleteFavorite(recipeName);
+    deleteFavorite(recipeId) {
+        this.props.actions.deleteFavorite(recipeId);
     }
 
     render() {

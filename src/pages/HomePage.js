@@ -11,9 +11,7 @@ class HomePage extends React.Component {
         return (
             <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
                 <View style={styles.homeContainer}>
-                    <NavigationEvents
-                        onDidFocus={() => console.log('navEvent')}
-                    />
+                    <NavigationEvents />
                     <View>
                         <InputHome />
                     </View>

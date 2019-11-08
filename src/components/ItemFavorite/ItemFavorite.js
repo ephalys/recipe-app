@@ -5,8 +5,8 @@ import { SwipeRow } from 'react-native-swipe-list-view';
 import { connect } from 'react-redux';
 import { withNavigation } from 'react-navigation';
 import PropTypes from 'prop-types';
-import {View, StyleSheet, TouchableWithoutFeedback, Text, Image, TouchableHighlight} from 'react-native';
-import {Transition} from "react-navigation-fluid-transitions";
+import { View, StyleSheet, TouchableWithoutFeedback, Text, Image, TouchableHighlight } from 'react-native';
+import { Transition } from "react-navigation-fluid-transitions";
 
 class ItemFavorite extends Component {
 
@@ -15,42 +15,55 @@ class ItemFavorite extends Component {
         onDelete: PropTypes.func.isRequired
     };
 
-    componentDidMount() {
-        this.props.recipeServ.getRecipes(this.props.itemID).then((resp) => {
-            this.setState({ OneRecipe: resp.data });
-        });
-    }
-
     state = {
-        OneRecipe: null
+        item: null
     };
+
+    componentDidMount() {
+        this.props.recipeServ.getRecipesById(this.props.itemID)
+            .then((resp) => {
+                data = resp.data[0];
+                this.setState({
+                    item: {
+                        uri: data.uri,
+                        label: data.label,
+                        image: data.image,
+                        url: data.url,
+                        yield: data.yield,
+                        ingredientLines: data.ingredientLines,
+                        totalTime: data.totalTime,
+                        id: data.uri.split('_')[1]
+                    }
+                });
+            });
+    }
 
     render() {
         return (
-            this.state.OneRecipe !== null ? (
+            this.state.item !== null ? (
                 <SwipeRow leftOpenValue={0} disableRightSwipe={true} rightOpenValue={-105}>
                     <View style={styles.standaloneRowBack}>
-                        <Icon name="ios-trash" size={35} color="#fff" type='ionicon' onPress={() => this.props.onDelete(this.props.city)} />
+                        <Icon name="ios-trash" size={35} color="#fff" type='ionicon' onPress={() => this.props.onDelete(this.state.item.id)} />
                     </View>
                     <TouchableWithoutFeedback
                         onPress={() => {
                             this.props.navigation.navigate('RecipePage', {
-                                recipeId: this.props.itemID
+                                item: this.state.item
                             });
                         }}>
                         <View style={styles.itemContainer}>
-                            <Transition shared="recipeImage">
-                                <Image style={styles.imageFavorites} source={{uri: this.state.OneRecipe[0].image }}/>
+                            <Transition shared={this.state.item.id}>
+                                <Image style={styles.imageFavorites} source={{ uri: this.state.item.image }} />
                             </Transition>
                             <Text>
-                                {this.state.OneRecipe[0].label}
+                                {this.state.item.label}
                             </Text>
                         </View>
                     </TouchableWithoutFeedback>
                 </SwipeRow>
             ) : (
-                <ActivityIndicator />
-            )
+                    <ActivityIndicator />
+                )
         )
     }
 }

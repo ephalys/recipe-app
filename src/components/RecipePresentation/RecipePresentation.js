@@ -11,8 +11,8 @@ class RecipePresentation extends React.Component {
     render() {
         return (
             <View style={styles.containerPresentation}>
-                <Transition shared="recipeImage">
-                    <ImageBackground style={styles.imageRecipe} source={{ uri: this.props.item.recipe.image }}>
+                <Transition shared={this.props.item.id}>
+                    <ImageBackground style={styles.imageRecipe} source={{ uri: this.props.item.image }}>
                         <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
                             <Transition appear="top">
                                 <View style={styles.buttonsTopLeft}>
@@ -22,11 +22,11 @@ class RecipePresentation extends React.Component {
                             <Transition appear="top">
                                 <View style={styles.buttonsTopRight}>
                                     <Dictation text="Hello" />
-                                    <FavoriteButton recipeId={this.props.item.recipe.uri.split('_')} />
+                                    <FavoriteButton recipeId={this.props.item.id} />
                                 </View>
                             </Transition>
                         </View>
-                        <Text style={styles.titleRecipe}>{this.props.item.recipe.label}</Text>
+                        <Text style={styles.titleRecipe}>{this.props.item.label}</Text>
                     </ImageBackground>
                 </Transition>
                 <View style={styles.presentation}>
@@ -36,7 +36,7 @@ class RecipePresentation extends React.Component {
                         </Transition>
 
                         <Transition appear="horizontal">
-                            <Text style={styles.textDescriptionPresentation}>{this.props.item.recipe.yield}</Text>
+                            <Text style={styles.textDescriptionPresentation}>{this.props.item.yield}</Text>
                         </Transition>
                     </View>
                     <View style={styles.sousPresentation}>
@@ -45,7 +45,7 @@ class RecipePresentation extends React.Component {
                         </Transition>
 
                         <Transition appear="horizontal">
-                            <Text style={styles.textDescriptionPresentation}>{parseInt(this.props.item.recipe.totalTime / 60)} hr {this.props.item.recipe.totalTime % 60} min</Text>
+                            <Text style={styles.textDescriptionPresentation}>{this.props.item.totalTime >= 60 && (`${parseInt(this.props.item.totalTime / 60)} hr `)}{this.props.item.totalTime % 60} min</Text>
                         </Transition>
                     </View>
                 </View>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollView, View, StyleSheet, Text } from 'react-native';
+import { ScrollView, View, StyleSheet, Text, TabBarIOS } from 'react-native';
 import ListItem from './ListItem'
 import TitlePage from "../TitlePage/TitlePage";
 import { connect } from 'react-redux';
@@ -14,8 +14,21 @@ class ListHome extends React.Component {
 	componentDidMount() {
 		this.props.recipeServ.getRecipesHome()
 			.then((datas) => {
+				let tab = [];
+				datas.data.hits.map((data) => {
+					tab.push({
+						uri: data.recipe.uri,
+						label: data.recipe.label,
+						image: data.recipe.image,
+						url: data.recipe.url,
+						yield: data.recipe.yield,
+						ingredientLines: data.recipe.ingredientLines,
+						totalTime: data.recipe.totalTime,
+						id: data.recipe.uri.split('_')[1]
+					});
+				});
 				this.setState({
-					datas: datas.data.hits
+					datas: tab
 				});
 			})
 			.catch((err) => {
@@ -35,7 +48,7 @@ class ListHome extends React.Component {
 					>
 						<View style={{ flexDirection: 'row' }} onStartShouldSetResponder={() => true}>
 							{this.state.datas.map((data) =>
-								<ListItem item={data} key={data.recipe.uri.split('_')[1]} />
+								<ListItem item={data} key={data.id} />
 							)}
 						</View>
 					</ScrollView>

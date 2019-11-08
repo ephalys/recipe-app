@@ -15,13 +15,13 @@ class ListItem extends React.Component {
                     });
                 }}
             >
-                <Transition shared="recipeImage">
-                    <ImageBackground source={{ uri: this.props.item.recipe.image }} style={styles.imageContainer}>
+                <Transition shared={this.props.item.id}>
+                    <ImageBackground source={{ uri: this.props.item.image }} style={styles.imageContainer}>
                         <View style={styles.buttonsTop}>
-                            <FavoriteButton recipeId={this.props.item.recipe.uri.split('_')[1]} />
+                            <FavoriteButton recipeId={this.props.item.id} />
                         </View>
                         <Text style={styles.titleRecipe}>
-                            {this.props.item.recipe.label}
+                            {this.props.item.label}
                         </Text>
                     </ImageBackground>
                 </Transition>

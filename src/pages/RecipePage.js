@@ -8,14 +8,13 @@ import { Transition } from "react-navigation-fluid-transitions";
 
 class RecipePage extends React.Component {
   render() {
-    console.log(this.props.navigation.state.params.item);
     return (
       <ScrollView style={styles.container}>
         <RecipePresentation item={this.props.navigation.state.params.item} />
         <Transition appear="horizontal">
-          <ButtonModel text={'Start Cooking'} backgroundColor={this.props.theme.colors.primary} url={this.props.navigation.state.params.item.recipe.url} />
+          <ButtonModel text={'Start Cooking'} backgroundColor={this.props.theme.colors.primary} url={this.props.navigation.state.params.item.url} />
         </Transition>
-        <IngredientsList ingredients={this.props.navigation.state.params.item.recipe.ingredientLines} />
+        <IngredientsList ingredients={this.props.navigation.state.params.item.ingredientLines} />
       </ScrollView>
     );
   };
