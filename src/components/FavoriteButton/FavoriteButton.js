@@ -1,14 +1,15 @@
 import React from "react";
-import { TouchableOpacity, StyleSheet } from "react-native";
+import { TouchableOpacity, StyleSheet, Vibration } from "react-native";
 import Icon from 'react-native-vector-icons/Ionicons';
 import { bindActionCreators } from "redux";
 import { addAsync, initAsync } from "../../redux/actions/RecipesActions";
 import { connect } from "react-redux";
+import * as Haptics from 'expo-haptics';
 
 class FavoriteButton extends React.Component {
 
     onPressAdd(id) {
-        console.log(id);
+        Haptics.selectionAsync()
         this.props.actions.addFavorite(id);
     }
 
