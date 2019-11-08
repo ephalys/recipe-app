@@ -44,4 +44,5 @@ export const deleteAsync = (recipeID) => {
                 });
         });
     };
-}
+};
+
