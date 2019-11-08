@@ -19,7 +19,7 @@ const homeNavigator = FluidNavigator(
         SearchPage: {
             screen: SearchPage
         }
-    }
+    },
 );
 
 

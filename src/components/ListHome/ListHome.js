@@ -1,10 +1,11 @@
 import React from 'react';
-import { ScrollView, View, StyleSheet, Text, TabBarIOS } from 'react-native';
+import {ScrollView, View, StyleSheet, Text, TabBarIOS, TouchableWithoutFeedback} from 'react-native';
 import ListItem from './ListItem'
 import TitlePage from "../TitlePage/TitlePage";
 import { connect } from 'react-redux';
 import { withNavigation } from 'react-navigation';
 import LoadingView from '../../components/LoadingView/LoadingView';
+import {Transition} from "react-navigation-fluid-transitions";
 
 class ListHome extends React.Component {
 	state = {
@@ -64,22 +65,22 @@ class ListHome extends React.Component {
 	render() {
 		return (
 			this.state.datas !== null ? (
-				<View style={{ flex: 1 }}>
-					<ScrollView
-						horizontal={true}
-						showsHorizontalScrollIndicator={false}
-						contentContainerStyle={styles.scrollList}
-					>
-						<View style={{ flexDirection: 'row' }} onStartShouldSetResponder={() => true}>
-							{this.state.datas.map((data) =>
-								<ListItem item={data} key={data.id} />
-							)}
-						</View>
-					</ScrollView>
-				</View>
+					<View style={{ flex: 1 }}>
+						<ScrollView
+							horizontal={true}
+							showsHorizontalScrollIndicator={false}
+							contentContainerStyle={styles.scrollList}
+						>
+							<View style={{ flexDirection: 'row' }} onStartShouldSetResponder={() => true}>
+								{this.state.datas.map((data) =>
+									<ListItem item={data} key={data.id} />
+								)}
+							</View>
+						</ScrollView>
+					</View>
 			) : (
-					<LoadingView />
-				)
+				<LoadingView />
+			)
 		);
 	};
 }
