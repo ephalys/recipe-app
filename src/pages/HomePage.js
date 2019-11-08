@@ -7,21 +7,21 @@ import { NavigationEvents } from 'react-navigation';
 
 class HomePage extends React.Component {
 
-    render(){
-        return(
+    render() {
+        return (
             <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
                 <View style={styles.homeContainer}>
                     <NavigationEvents
                         onDidFocus={() => console.log('navEvent')}
                     />
                     <View>
-                        <InputHome/>
+                        <InputHome />
                     </View>
                     <View style={styles.listHomeContainer}>
-                        <ListHome/>
+                        <ListHome />
                     </View>
                     <View>
-                        <Filters/>
+                        <Filters />
                     </View>
                 </View>
             </TouchableWithoutFeedback>
