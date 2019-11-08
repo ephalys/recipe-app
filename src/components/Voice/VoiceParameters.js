@@ -74,7 +74,7 @@ class Dictation extends React.Component {
         if (this.state.icon === "ios-play")
             this.setState({ icon: "ios-pause" });
         else
-            this.setState({ icon: "ios-play-empty" });
+            this.setState({ icon: "ios-play" });
 
         try {
             Tts.voices();
