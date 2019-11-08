@@ -3,7 +3,6 @@ import { StyleSheet, View, TouchableWithoutFeedback, Keyboard } from 'react-nati
 import InputHome from "../components/InputHome/InputHome";
 import ListHome from "../components/ListHome/ListHome";
 import Filters from '../components/Filters/Filters'
-import { NavigationEvents } from 'react-navigation';
 
 class HomePage extends React.Component {
 

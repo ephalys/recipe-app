@@ -99,10 +99,7 @@ const styles = StyleSheet.create({
     buttonsTopLeft: {
         flexDirection: 'row',
         top: 20,
-        left: 0,
-        textShadowColor: 'rgba(0, 0, 0, 0.05)',
-        textShadowOffset: { width: -1, height: 1 },
-        textShadowRadius: 3,
+        left: 0
     },
     buttonsTopRight: {
         flexDirection: 'row',

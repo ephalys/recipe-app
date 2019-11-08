@@ -48,8 +48,8 @@ const styles = StyleSheet.create({
     },
     iconFavorite: {
         shadowColor: 'black',
-        shadowOpacity: 1,
-        shadowRadius: 5,
+        shadowOpacity: .2,
+        shadowRadius: 3,
         // iOS
         shadowOffset: {
             width: 0,            // These can't both be 0
