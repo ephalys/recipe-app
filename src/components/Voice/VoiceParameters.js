@@ -1,127 +1,130 @@
 import React from 'react';
-import { View, FlatList, Button, StyleSheet } from 'react-native';
+import { View } from 'react-native';
 import { Icon } from 'react-native-elements';
-//import Tts from 'react-native-tts';
-//import Voice from 'react-native-voice';
+import * as Speech from 'expo-speech';
+import Voice from 'react-native-voice';
 
 class Dictation extends React.Component {
 
-	/*componentDidMount() {
-			Tts.getInitStatus().then(() => {
-					Tts.setDucking(true);
-					Tts.setDefaultLanguage('en-IE');
-					Tts.speak('Hello, world!', { androidParams: { KEY_PARAM_PAN: -1, KEY_PARAM_VOLUME: 0.5, KEY_PARAM_STREAM: 'STREAM_MUSIC' } });
-					Tts.voices().then(voices => console.log(voices));
-			}, (err) => {
-					if (err.code === 'no_engine') {
-							Tts.requestInstallEngine();
-					}
-			});
-	}*/
+    constructor(props) {
+        super(props);
+        Voice.onSpeechResults = this.onSpeechResults;
+    }
 
-	//https://medium.com/@anderanjos.ti/build-your-own-voice-assistant-with-react-native-node-js-and-watson-pt-3-mobile-app-86d7b88bb56c
-	//https://aboutreact.com/react-native-text-to-speech/
-	//Mots clés commandes: Start, Pause, Continue, Stop
-	//Essayer de faire démarrer la reconnaissance vocale (RV) en même temps que la dictation commence sans que la RV n'écoute la dictation sinon faire un bouton pour commencer l'écoute de la RV et des mots clés commandes
+    state = {
+        icon: 'ios-play-circle',
+        increment: null,
+        language: 'en-US'
+    };
 
-	state = {
-		voices: [],
-		selectedVoice: null,
-		icon: 'ios-play'
-	};
+    componentWillUnmount() {
+        Voice.destroy().then(Voice.removeAllListeners);
+    }
 
-	initTts = async () => {
-		const voices = await Tts.voices();
-		const availableVoices = voices
-			.filter(v => !v.networkConnectionRequired && !v.notInstalled)
-			.map(v => {
-				return { id: v.id, name: v.name, language: v.language };
-			});
-		let selectedVoice = null;
-		if (voices && voices.length > 0) {
-			selectedVoice = voices[0].id;
-			try {
-				await Tts.setDefaultLanguage(voices[0].language);
-			} catch (err) {
-				console.log(`setDefaultLanguage error `, err);
-			}
-			await Tts.setDefaultVoice(voices[0].id);
-			this.setState({
-				voices: availableVoices,
-				selectedVoice
-			});
-		}
-	};
+    startRecognizing = () => {
+        try {
+            Speech.stop();
+            Voice.stop();
+            Voice.start(this.state.language);
+        } catch (e) {
+            alert(e);
+        }
+    };
 
-	onVoicePress = async voice => {
-		try {
-			await Tts.setDefaultLanguage(voice.language);
-		} catch (err) {
-			console.log(`setDefaultLanguage error `, err);
-		}
-		await Tts.setDefaultVoice(voice.id);
-		this.setState({ selectedVoice: voice.id });
-	};
+    help = () => {
+        Speech.speak("Use microphone icon to start or continue recipe. List of voice commands: 'Next', 'Pause', 'Repeat', 'Stop'.", { language: this.state.language, onDone: this.startRecognizing });
+    }
 
-	readText = async () => {
-		/*Tts.getInitStatus().then((this.initTts), (err) => {
-				if (err.code === 'no_engine') {
-						Tts.requestInstallEngine();
-				}
-		});
-		Tts.stop();
-		Tts.speak(this.props.text);*/
-		if (this.state.icon === "ios-play")
-			this.setState({ icon: "ios-pause" });
-		else
-			this.setState({ icon: "ios-play" });
+    start = () => {
+        options = {
+            language: this.state.language,
+            onDone: this.startRecognizing
+        }
 
-		try {
-			Tts.voices();
-		}
-		catch (err) {
-			console.log(err);
-		}
-	};
+        Speech.speak("Hi, I'm your personal assistant for this recipe. For each step, wait end of speech before using voice commands. We're going to start. When you are ready, say 'start' ?", options);
+    }
 
-	renderVoiceItem = ({ item }) => {
-		return (
-			<Button
-				title={`${item.language} - ${item.name || item.id}`}
-				color={this.state.selectedVoice === item.id ? undefined : "#969696"}
-				onPress={() => this.onVoicePress(item)}
-			/>
-		);
-	};
+    next = () => {
+        Speech.stop();
+        Speech.speak("Say 'Next' to continue, 'Stop' to close recipe, 'Repeat' to repeat last instruction or 'Pause'. Your turn !", {
+            language: this.state.language,
+            onDone: this.startRecognizing
+        });
+    }
 
-	render() {
-		return (
-			<View>
-				<View>
-					<Icon name={this.state.icon} style={styles.iconPlay} size={35} color={'#fff'} type='ionicon' onPress={() => this.readText()} />
-				</View>
-				<FlatList
-					keyExtractor={item => item.id}
-					renderItem={this.renderVoiceItem}
-					extraData={this.state.selectedVoice}
-					data={this.state.voices}
-				/>
-			</View>
-		)
-	}
+    end = () => {
+        Voice.stop();
+        Speech.speak('Congratulations ! You complete this recipe !', { language: this.state.language });
+        Speech.stop();
+    }
+
+    readText = () => {
+        options = {
+            language: this.state.language,
+            onDone: this.next
+        }
+
+        if (this.state.increment > this.props.text.length) {
+            this.end();
+        }
+        else {
+            if (this.props.text[this.state.increment] !== null && this.props.text[this.state.increment] !== "" && this.props.text[this.state.increment].length > 0){
+                let increment = this.state.increment + 1;
+                Speech.speak("Step" + increment + ". "+ this.props.text[this.state.increment], options);
+            }
+            else
+                this.next();
+        }
+    };
+
+    onSpeechResults = e => {
+        let speech = JSON.stringify(e.value[0]).replace(/\"/g, '');
+        if (speech.length > 0 && speech !== "" && speech !== null) {
+            // alert(speech);
+            switch (speech) {
+                case "start":
+                    this.setState({ increment: 0 });
+                    Speech.speak("Right! Let's start!", { language: this.state.language, onDone: this.readText });
+                    break;
+                case "next":
+                    this.setState(prevState => ({ increment: prevState.increment + 1 }));
+                    this.readText();
+                    break;
+                case "pause":
+                    Speech.speak("Pause. Click on microphone icon to continue.", { language: this.state.language });
+                    Speech.stop();
+                    Voice.stop();
+                    break;
+                case "stop":
+                    Speech.speak('Stop. Click on microphone to start again.', { language: this.state.language });
+                    Speech.stop();
+                    Voice.stop();
+                    this.setState({ increment: null });
+                    break;
+                case "repeat":
+                    this.readText();
+                    break;
+                default:
+                    Speech.speak("I didn't understand. Can you repeat please ?", { language: this.state.language, onDone: this.startRecognizing });
+                    break;
+            }
+        }
+    };
+
+    render() {
+        return (
+            <View>
+                <View style={{ flexDirection: 'row' }}>
+                    <View style={{ marginRight: 20 }}>
+                        <Icon name='ios-help-circle' size={40} color={'#fff'} type='ionicon' onPress={() => this.help()} />
+                    </View>
+                    <View>
+                        <Icon name='ios-mic' size={40} color={'#fff'} type='ionicon' onPress={this.state.increment !== null ? this.next : this.start} />
+                    </View>
+                </View>
+            </View>
+        )
+    }
 }
 
 export default Dictation;
-
-const styles = StyleSheet.create({
-	iconPlay: {
-		shadowColor: 'black',
-		shadowOpacity: .2,
-		shadowRadius: 3,
-		// iOS
-		shadowOffset: {
-			width: 0,            // These can't both be 0
-			height: 1,           // i.e. the shadow has to be offset in some way
-		},
-	}
-});
