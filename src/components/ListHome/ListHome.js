@@ -1,5 +1,5 @@
 import React from 'react';
-import {ScrollView, View, StyleSheet} from 'react-native';
+import { ScrollView, StyleSheet, View } from 'react-native';
 import ListItem from './ListItem'
 import { connect } from 'react-redux';
 import { withNavigation } from 'react-navigation';
@@ -11,7 +11,7 @@ class ListHome extends React.Component {
 	};
 
 	componentDidMount() {
-		if(!this.props.searchRecipeName) {
+		if (!this.props.searchRecipeName) {
 			this.props.recipeServ.getRecipesHome()
 				.then((datas) => {
 					let tab = [];
@@ -63,22 +63,22 @@ class ListHome extends React.Component {
 	render() {
 		return (
 			this.state.datas !== null ? (
-					<View style={{ flex: 1 }}>
-						<ScrollView
-							horizontal={true}
-							showsHorizontalScrollIndicator={false}
-							contentContainerStyle={styles.scrollList}
-						>
-							<View style={{ flexDirection: 'row' }} onStartShouldSetResponder={() => true}>
-								{this.state.datas.map((data) =>
-									<ListItem item={data} key={data.id} />
-								)}
-							</View>
-						</ScrollView>
-					</View>
+				<View style={{ flex: 1 }}>
+					<ScrollView
+						horizontal={true}
+						showsHorizontalScrollIndicator={false}
+						contentContainerStyle={styles.scrollList}
+					>
+						<View style={{ flexDirection: 'row' }} onStartShouldSetResponder={() => true}>
+							{this.state.datas.map((data) =>
+								<ListItem item={data} key={data.id} />
+							)}
+						</View>
+					</ScrollView>
+				</View>
 			) : (
-				<LoadingView />
-			)
+					<LoadingView />
+				)
 		);
 	};
 }

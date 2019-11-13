@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 import * as WebBrowser from 'expo-web-browser';
 
 class ButtonModel extends React.Component {
@@ -10,9 +10,9 @@ class ButtonModel extends React.Component {
 
   render() {
     return (
-        <TouchableOpacity style={[{ ...styles.startButton, ...this.props.style }, { backgroundColor: this.props.backgroundColor }]} onPress={this.onSeeRecipePress}>
-          <Text style={styles.textStartButton}>{this.props.text}</Text>
-        </TouchableOpacity>
+      <TouchableOpacity style={[{ ...styles.startButton, ...this.props.style }, { backgroundColor: this.props.backgroundColor }]} onPress={this.onSeeRecipePress}>
+        <Text style={styles.textStartButton}>{this.props.text}</Text>
+      </TouchableOpacity>
     );
   };
 }

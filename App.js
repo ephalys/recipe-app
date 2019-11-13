@@ -6,30 +6,30 @@ import { Provider } from 'react-redux';
 import { store } from './src/redux/Store';
 
 const recipeTheme = {
-    ...DefaultTheme,
-    roundness: 2,
-    colors: {
-        ...DefaultTheme.colors,
-        primary: '#86c16f',
-        accent: '#f1c40f',
-        background: '#fff'
-    },
+	...DefaultTheme,
+	roundness: 2,
+	colors: {
+		...DefaultTheme.colors,
+		primary: '#86c16f',
+		accent: '#f1c40f',
+		background: '#fff'
+	},
 };
 
 export default function App() {
-    return (
-        <Provider store={store}>
-            <PaperProvider theme={recipeTheme}>
-                <SafeAreaView style={styles.container}>
-                    <AppNavigator />
-                </SafeAreaView>
-            </PaperProvider>
-        </Provider>
-    );
+	return (
+		<Provider store={store}>
+			<PaperProvider theme={recipeTheme}>
+				<SafeAreaView style={styles.container}>
+					<AppNavigator />
+				</SafeAreaView>
+			</PaperProvider>
+		</Provider>
+	);
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-    }
+	container: {
+		flex: 1,
+	}
 });
