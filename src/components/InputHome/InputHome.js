@@ -4,23 +4,31 @@ import { withNavigation } from 'react-navigation';
 
 class InputHome extends React.Component {
 
+    state = {
+        recipeName: null
+    }
+
     searchRecipe(recipeName) {
         this.props.navigation.navigate('SearchPage', {
             recipeName: recipeName
         });
+        this.textInput.clear()
+        this.setState({
+            recipeName: null
+        });
     }
 
-    render(){
-        return(
+    render() {
+        return (
             <View style={styles.inputContainer}>
                 <TextInput
+                    ref={input => { this.textInput = input }}
                     placeholder={'Search recipes...'}
                     style={styles.input}
                     underlineColorAndroid="transparent"
                     returnKeyType={'search'}
                     onChangeText={(text) => this.setState({ recipeName: text })}
-                    onSubmitEditing={() => this.searchRecipe(this.state.recipeName
-                    )}
+                    onSubmitEditing={() => this.searchRecipe(this.state.recipeName)}
                 />
             </View>
         );
