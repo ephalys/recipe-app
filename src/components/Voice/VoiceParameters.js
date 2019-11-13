@@ -80,7 +80,6 @@ class Dictation extends React.Component {
 	onSpeechResults = e => {
 		let speech = JSON.stringify(e.value[0]).replace(/\"/g, '');
 		if (speech.length > 0 && speech !== "" && speech !== null) {
-			// alert(speech);
 			switch (speech) {
 				case "start":
 					this.setState({ increment: 0 });
@@ -91,7 +90,11 @@ class Dictation extends React.Component {
 					this.readText();
 					break;
 				case "pause":
+				case "pose":
+				case "Bose":
+				case "bose":
 					Speech.speak("Pause. Click on microphone icon to continue.", { language: this.state.language });
+					// this.setState(prevState => ({ increment: prevState.increment }));
 					break;
 				case "stop":
 					Speech.speak('Stop. Click on microphone to start again.', { language: this.state.language });
@@ -112,10 +115,10 @@ class Dictation extends React.Component {
 			<View>
 				<View style={{ flexDirection: 'row' }}>
 					<View style={{ marginRight: 20 }}>
-						<Icon name='ios-help-circle' size={40} color={'#fff'} type='ionicon' onPress={() => this.help()} />
+						<Icon name='ios-help-circle' size={40} color={'#86c16f'} type='ionicon' onPress={this.help} />
 					</View>
 					<View>
-						<Icon name='ios-mic' size={40} color={'#fff'} type='ionicon' onPress={this.state.increment !== null ? this.next : this.start} />
+						<Icon name='ios-mic' size={40} color={'#86c16f'} type='ionicon' onPress={this.state.increment !== null ? this.next : this.start} />
 					</View>
 				</View>
 			</View>
