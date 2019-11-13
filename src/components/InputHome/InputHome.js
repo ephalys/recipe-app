@@ -12,13 +12,17 @@ class InputHome extends React.Component {
         this.props.navigation.navigate('SearchPage', {
             recipeName: recipeName
         });
-        this.textInput.clear()
-        this.setState({
-            recipeName: null
-        });
+
     }
 
     render() {
+        this.props.navigation.addListener(
+            'willFocus',
+            () => {
+                this.textInput.clear();
+            }
+        )
+
         return (
             <View style={styles.inputContainer}>
                 <TextInput
@@ -27,6 +31,7 @@ class InputHome extends React.Component {
                     style={styles.input}
                     underlineColorAndroid="transparent"
                     returnKeyType={'search'}
+                    clearButtonMode={true}
                     onChangeText={(text) => this.setState({ recipeName: text })}
                     onSubmitEditing={() => this.searchRecipe(this.state.recipeName)}
                 />
