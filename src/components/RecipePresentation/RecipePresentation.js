@@ -20,7 +20,7 @@ class RecipePresentation extends React.Component {
 							</Transition>
 							<Transition appear="top">
 								<View style={styles.buttonsTopRight}>
-									<Dictation text="Hello" />
+									<Dictation text={steps.split(".")} />
 									<FavoriteButton recipeId={this.props.item.id} />
 								</View>
 							</Transition>
@@ -60,6 +60,9 @@ class RecipePresentation extends React.Component {
 		);
 	};
 }
+
+const steps = "Place octopus in a pressure cooker and add just enough water to cover. Add a couple of large pinches of salt. Close pressure cooker and bring to high pressure (12 to 15 psi). Once cooker has reached high pressure, cook for 15 minutes.Using steam-release valve, depressurize cooker rapidly. Check octopus for tenderness by sliding a paring knife into the thickest part of one of its tentacles; it should slide in easily with little resistance.";
+const test = "If the octopus is not tender enough, return to high pressure and then cook for 5 minutes longer. (Fifteen minutes was the correct time based on all our tests, but variations in the octopus, such as size, and in the pressure cooker used may change the cooking time slightly.) Let octopus cool in its cooking liquid, then drain. Cooked octopus can be refrigerated in a sealed container for up to 2 days before use.To use cooked octopus, cut out and discard the hard beak (if it hasn't been removed already by the fishmonger), which is found in the center of the base of the octopus body, where the tentacles converge. Cut out and discard the section of the head with eyes; the rest of the head is edible. Separate tentacles into individual pieces.To Serve Cold: Cut tentacles and head into pieces and add to a seafood salad or ceviche.To Sear: Leave tentacles whole (or, if very long, cut into manageable sections); cut head meat into large pieces. Heat a tablespoon or two of vegetable oil in a skillet over high heat until shimmering. Add octopus pieces and cook until well browned and crisp, about 3 minutes. Turn and brown on other side, about 3 minutes longer. Season with salt and serve as desired.";
 
 export default withNavigation(RecipePresentation);
 
