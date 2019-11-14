@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, TextInput, View } from 'react-native';
+import { Alert, StyleSheet, TextInput, View } from 'react-native';
 import { withNavigation } from 'react-navigation';
 
 class InputHome extends React.Component {
@@ -9,16 +9,22 @@ class InputHome extends React.Component {
 	}
 
 	searchRecipe(recipeName) {
-		this.props.navigation.navigate('SearchPage', {
-			recipeName: recipeName
-		});
-
+		if(recipeName){
+			this.props.navigation.navigate('SearchPage', {
+				recipeName: recipeName
+			});
+		}else{
+			Alert.alert('Entry error', 'Please, your search may contain at least one letter.');
+		}
 	}
-
+	
 	render() {
 		this.props.navigation.addListener(
 			'willFocus',
 			() => {
+				this.state = {
+					recipeName: null
+				};
 				this.textInput.clear();
 			}
 		)
