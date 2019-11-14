@@ -31,7 +31,7 @@ class InputHome extends React.Component {
 					style={styles.input}
 					underlineColorAndroid="transparent"
 					returnKeyType={'search'}
-					clearButtonMode={true}
+					clearButtonMode={'while-editing'}
 					onChangeText={(text) => this.setState({ recipeName: text })}
 					onSubmitEditing={() => this.searchRecipe(this.state.recipeName)}
 				/>
