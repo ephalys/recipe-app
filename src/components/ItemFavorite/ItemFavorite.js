@@ -43,7 +43,9 @@ class ItemFavorite extends React.Component {
 			this.state.item !== null ? (
 				<SwipeRow leftOpenValue={0} disableRightSwipe={true} rightOpenValue={-105}>
 					<View style={styles.standaloneRowBack}>
-						<Icon name="ios-trash" size={35} color="#fff" type='ionicon' onPress={() => this.props.onDelete(this.state.item.id)} />
+						<TouchableWithoutFeedback onPress={() => this.props.onDelete(this.state.item.id)}>
+							<Icon name="ios-trash" size={35} color="#fff" type='ionicon' />
+						</TouchableWithoutFeedback>
 					</View>
 					<TouchableWithoutFeedback
 						onPress={() => {
@@ -62,8 +64,8 @@ class ItemFavorite extends React.Component {
 					</TouchableWithoutFeedback>
 				</SwipeRow>
 			) : (
-					<ActivityIndicator />
-				)
+				<ActivityIndicator />
+			)
 		)
 	}
 }
