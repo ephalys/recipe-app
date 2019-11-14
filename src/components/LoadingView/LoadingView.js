@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { Text, ActivityIndicator } from 'react-native';
 // import AnimatedLoader from "react-native-animated-loader";
 
 class LoadingView extends React.Component {
@@ -21,7 +21,8 @@ class LoadingView extends React.Component {
 			// 	animationStyle={{ width: 150, height: 150 }}
 			// 	speed={1}
 			// />
-			<Text>Chargement...</Text>
+			// <Text>Chargement...</Text>
+			<ActivityIndicator style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }} />
 		);
 	};
 }

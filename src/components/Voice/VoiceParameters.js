@@ -94,7 +94,6 @@ class Dictation extends React.Component {
 				case "Bose":
 				case "bose":
 					Speech.speak("Pause. Click on microphone icon to continue.", { language: this.state.language });
-					// this.setState(prevState => ({ increment: prevState.increment }));
 					break;
 				case "stop":
 					Speech.speak('Stop. Click on microphone to start again.', { language: this.state.language });
@@ -107,6 +106,7 @@ class Dictation extends React.Component {
 					Speech.speak("I didn't understand. Can you repeat please ?", { language: this.state.language, onDone: this.startRecognizing });
 					break;
 			}
+			// alert(this.state.increment);
 		}
 	};
 
@@ -115,10 +115,10 @@ class Dictation extends React.Component {
 			<View>
 				<View style={{ flexDirection: 'row' }}>
 					<View style={{ marginRight: 20 }}>
-						<Icon name='ios-help-circle' size={40} color={'#86c16f'} type='ionicon' onPress={this.help} />
+						<Icon name='ios-help-circle' size={40} color={'#fff'} type='ionicon' onPress={this.help} />
 					</View>
 					<View>
-						<Icon name='ios-mic' size={40} color={'#86c16f'} type='ionicon' onPress={this.state.increment !== null ? this.next : this.start} />
+						<Icon name='ios-mic' size={40} color={'#fff'} type='ionicon' onPress={this.state.increment !== null ? this.next : this.start} />
 					</View>
 				</View>
 			</View>

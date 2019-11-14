@@ -169,6 +169,7 @@ class Filters extends React.Component {
 							<FilterButton
 								text={filterObject.value}
 								type={filterObject.type}
+								key={`${filterObject.type}-${filterObject.value}`}
 								style={filterObject.type === 'mealType' && filterObject.value === 'Breakfast' ? styles.firstFilter : ((filterObject.type === 'cuisineType' && filterObject.value === 'South East Asian') && styles.lastFilter)}
 							/>
 						)}
